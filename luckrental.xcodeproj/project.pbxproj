@@ -1,0 +1,1323 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7C1990AB33148537BC4409B8 /* Pods_luckrental.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC30BE0163DEC79BCD1C0466 /* Pods_luckrental.framework */; };
+		FB09D0992AB443050049A8C8 /* YLCarListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FB09D0972AB443050049A8C8 /* YLCarListCell.m */; };
+		FB09D09A2AB443050049A8C8 /* YLCarListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB09D0982AB443050049A8C8 /* YLCarListCell.xib */; };
+		FB09D0A02AB463AB0049A8C8 /* YLMerchantCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FB09D09E2AB463AB0049A8C8 /* YLMerchantCell.m */; };
+		FB09D0A12AB463AB0049A8C8 /* YLMerchantCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB09D09F2AB463AB0049A8C8 /* YLMerchantCell.xib */; };
+		FB09D0A62AB465B80049A8C8 /* YLFeedbackVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FB09D0A42AB465B80049A8C8 /* YLFeedbackVC.m */; };
+		FB09D0A72AB465B80049A8C8 /* YLFeedbackVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB09D0A52AB465B80049A8C8 /* YLFeedbackVC.xib */; };
+		FB09D0AF2AB466D10049A8C8 /* YLAboutUSVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FB09D0AD2AB466D10049A8C8 /* YLAboutUSVC.m */; };
+		FB09D0B02AB466D10049A8C8 /* YLAboutUSVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB09D0AE2AB466D10049A8C8 /* YLAboutUSVC.xib */; };
+		FB09D0B52AB467900049A8C8 /* YLWalletVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FB09D0B32AB467900049A8C8 /* YLWalletVC.m */; };
+		FB09D0B62AB467900049A8C8 /* YLWalletVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB09D0B42AB467900049A8C8 /* YLWalletVC.xib */; };
+		FB09D0BB2AB575150049A8C8 /* YLRechargeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FB09D0B92AB575150049A8C8 /* YLRechargeVC.m */; };
+		FB09D0BC2AB575150049A8C8 /* YLRechargeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB09D0BA2AB575150049A8C8 /* YLRechargeVC.xib */; };
+		FB09D0C02AB5938C0049A8C8 /* YLCurOrderVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FB09D0BF2AB5938C0049A8C8 /* YLCurOrderVC.m */; };
+		FB09D0C32AB593BE0049A8C8 /* YLHistoryOrderVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FB09D0C22AB593BE0049A8C8 /* YLHistoryOrderVC.m */; };
+		FB09D0C72AB593F50049A8C8 /* YLCurOrderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FB09D0C52AB593F50049A8C8 /* YLCurOrderCell.m */; };
+		FB09D0C82AB593F50049A8C8 /* YLCurOrderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB09D0C62AB593F50049A8C8 /* YLCurOrderCell.xib */; };
+		FB09D0CC2AB594130049A8C8 /* YLHistoryOrderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FB09D0CA2AB594130049A8C8 /* YLHistoryOrderCell.m */; };
+		FB09D0CD2AB594130049A8C8 /* YLHistoryOrderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB09D0CB2AB594130049A8C8 /* YLHistoryOrderCell.xib */; };
+		FB09D0D12AB8317A0049A8C8 /* YLCarBean.m in Sources */ = {isa = PBXBuildFile; fileRef = FB09D0D02AB8317A0049A8C8 /* YLCarBean.m */; };
+		FB09D0D52AB83B150049A8C8 /* YLMerchantBean.m in Sources */ = {isa = PBXBuildFile; fileRef = FB09D0D42AB83B150049A8C8 /* YLMerchantBean.m */; };
+		FB09D0D92AB83D7C0049A8C8 /* YLCarListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FB09D0D72AB83D7C0049A8C8 /* YLCarListVC.m */; };
+		FB09D0DA2AB83D7C0049A8C8 /* YLCarListVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB09D0D82AB83D7C0049A8C8 /* YLCarListVC.xib */; };
+		FB09D0DE2AB8434B0049A8C8 /* YLCarInfoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FB09D0DC2AB8434B0049A8C8 /* YLCarInfoVC.m */; };
+		FB09D0DF2AB8434B0049A8C8 /* YLCarInfoVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB09D0DD2AB8434B0049A8C8 /* YLCarInfoVC.xib */; };
+		FB0B226D2B31C8F0009F303D /* YLWebVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FB0B226C2B31C8F0009F303D /* YLWebVC.m */; };
+		FB14E1AF2B0BAF7800A746F2 /* YLLocationBean.m in Sources */ = {isa = PBXBuildFile; fileRef = FB14E1AE2B0BAF7800A746F2 /* YLLocationBean.m */; };
+		FB1914AE2B01F4CF006F60BB /* YLPayInfoBean.m in Sources */ = {isa = PBXBuildFile; fileRef = FB1914AD2B01F4CF006F60BB /* YLPayInfoBean.m */; };
+		FB23C5972AD0BCCD00E51DB9 /* YLServicesBean.m in Sources */ = {isa = PBXBuildFile; fileRef = FB23C5962AD0BCCD00E51DB9 /* YLServicesBean.m */; };
+		FB265F272C64CE25006FF1E2 /* YLQuestionListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FB265F252C64CE25006FF1E2 /* YLQuestionListCell.m */; };
+		FB265F282C64CE25006FF1E2 /* YLQuestionListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB265F262C64CE25006FF1E2 /* YLQuestionListCell.xib */; };
+		FB265F2C2C64CFE3006FF1E2 /* YLQuestionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FB265F2A2C64CFE3006FF1E2 /* YLQuestionCell.m */; };
+		FB265F2D2C64CFE3006FF1E2 /* YLQuestionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB265F2B2C64CFE3006FF1E2 /* YLQuestionCell.xib */; };
+		FB265F302C690F24006FF1E2 /* YLQuestionBean.m in Sources */ = {isa = PBXBuildFile; fileRef = FB265F2F2C690F23006FF1E2 /* YLQuestionBean.m */; };
+		FB2B01552C60D93400C34693 /* YLQuestionListVc.m in Sources */ = {isa = PBXBuildFile; fileRef = FB2B01532C60D93400C34693 /* YLQuestionListVc.m */; };
+		FB2B01562C60D93400C34693 /* YLQuestionListVc.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB2B01542C60D93400C34693 /* YLQuestionListVc.xib */; };
+		FB2EA77C2C70F5D3008C40AC /* YLEvaluaCell2.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB2EA77B2C70F5D3008C40AC /* YLEvaluaCell2.xib */; };
+		FB2EA77D2C70F5D3008C40AC /* YLEvaluaCell2.m in Sources */ = {isa = PBXBuildFile; fileRef = FB2EA77A2C70F5D3008C40AC /* YLEvaluaCell2.m */; };
+		FB405BDD2AB2DAC1008652CC /* YLHTTPUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = FB405BD92AB2DAC1008652CC /* YLHTTPUtility.m */; };
+		FB405BDE2AB2DAC1008652CC /* YLHTTPResult.m in Sources */ = {isa = PBXBuildFile; fileRef = FB405BDA2AB2DAC1008652CC /* YLHTTPResult.m */; };
+		FB405BEB2AB2F3B4008652CC /* YLLoginVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FB405BE82AB2F3B4008652CC /* YLLoginVC.m */; };
+		FB405BEC2AB2F3B4008652CC /* YLLoginVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB405BE92AB2F3B4008652CC /* YLLoginVC.xib */; };
+		FB405BF12AB2F3D3008652CC /* RCDMainTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB405BED2AB2F3D3008652CC /* RCDMainTabBarViewController.m */; };
+		FB405BF22AB2F3D3008652CC /* RCDNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB405BEF2AB2F3D3008652CC /* RCDNavigationViewController.m */; };
+		FB405BFA2AB2F944008652CC /* YLBaseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FB405BF82AB2F944008652CC /* YLBaseVC.m */; };
+		FB405BFF2AB30065008652CC /* YLHomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FB405BFD2AB30065008652CC /* YLHomeVC.m */; };
+		FB405C002AB30065008652CC /* YLHomeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB405BFE2AB30065008652CC /* YLHomeVC.xib */; };
+		FB405C052AB30F07008652CC /* YLMineVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FB405C032AB30F07008652CC /* YLMineVC.m */; };
+		FB405C062AB30F07008652CC /* YLMineVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB405C042AB30F07008652CC /* YLMineVC.xib */; };
+		FB497CF82BA892DD003630DB /* YLPartnersCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FB497CF62BA892DD003630DB /* YLPartnersCell.m */; };
+		FB497CF92BA892DD003630DB /* YLPartnersCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB497CF72BA892DD003630DB /* YLPartnersCell.xib */; };
+		FB497CFC2BA898CC003630DB /* YLPartnersBean.m in Sources */ = {isa = PBXBuildFile; fileRef = FB497CFB2BA898CC003630DB /* YLPartnersBean.m */; };
+		FB6108582AD7C65B0050868E /* RCDLanguageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FB6108572AD7C65B0050868E /* RCDLanguageManager.m */; };
+		FB6108642AD7D1470050868E /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = FB6108662AD7D1470050868E /* Localizable.strings */; };
+		FB6593F02AE422EA0039EF0A /* YLCountryBean.m in Sources */ = {isa = PBXBuildFile; fileRef = FB6593EF2AE422EA0039EF0A /* YLCountryBean.m */; };
+		FB7DC95F2ADE8B82002937C8 /* NSBundle+language.m in Sources */ = {isa = PBXBuildFile; fileRef = FB7DC95E2ADE8B82002937C8 /* NSBundle+language.m */; };
+		FB8ECC8F2C60E01C00600A8C /* YLQuestionListBean.m in Sources */ = {isa = PBXBuildFile; fileRef = FB8ECC8E2C60E01C00600A8C /* YLQuestionListBean.m */; };
+		FB9126A12AAF6DD00089E6D7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FB9126A02AAF6DD00089E6D7 /* AppDelegate.m */; };
+		FB9126A42AAF6DD00089E6D7 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FB9126A32AAF6DD00089E6D7 /* SceneDelegate.m */; };
+		FB9126A72AAF6DD00089E6D7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB9126A62AAF6DD00089E6D7 /* ViewController.m */; };
+		FB9126AA2AAF6DD00089E6D7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB9126A82AAF6DD00089E6D7 /* Main.storyboard */; };
+		FB9126AC2AAF6DD10089E6D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB9126AB2AAF6DD10089E6D7 /* Assets.xcassets */; };
+		FB9126AF2AAF6DD10089E6D7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB9126AD2AAF6DD10089E6D7 /* LaunchScreen.storyboard */; };
+		FB9126B22AAF6DD10089E6D7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FB9126B12AAF6DD10089E6D7 /* main.m */; };
+		FBA616FB2AC1DAD7002ACDAE /* YLSummitOrderVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA616F92AC1DAD7002ACDAE /* YLSummitOrderVC.m */; };
+		FBA616FC2AC1DAD7002ACDAE /* YLSummitOrderVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = FBA616FA2AC1DAD7002ACDAE /* YLSummitOrderVC.xib */; };
+		FBA617002AC2CE52002ACDAE /* YLPayOrder.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA616FE2AC2CE52002ACDAE /* YLPayOrder.m */; };
+		FBA617012AC2CE52002ACDAE /* YLPayOrder.xib in Resources */ = {isa = PBXBuildFile; fileRef = FBA616FF2AC2CE52002ACDAE /* YLPayOrder.xib */; };
+		FBA617052AC2EA02002ACDAE /* YLPayUploadV.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA617042AC2EA02002ACDAE /* YLPayUploadV.m */; };
+		FBA617072AC3FCB5002ACDAE /* YLPayUploadV.xib in Resources */ = {isa = PBXBuildFile; fileRef = FBA617062AC3FCB5002ACDAE /* YLPayUploadV.xib */; };
+		FBA6170D2AC40EB5002ACDAE /* UIView+Nib.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA6170B2AC40EB5002ACDAE /* UIView+Nib.m */; };
+		FBA617102AC41474002ACDAE /* UIView+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA6170E2AC41474002ACDAE /* UIView+Additions.m */; };
+		FBA617152ACBB790002ACDAE /* YLRegidterVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA617132ACBB790002ACDAE /* YLRegidterVC.m */; };
+		FBA617162ACBB790002ACDAE /* YLRegidterVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = FBA617142ACBB790002ACDAE /* YLRegidterVC.xib */; };
+		FBA6171C2ACC14A1002ACDAE /* YLBannerBean.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA6171B2ACC14A1002ACDAE /* YLBannerBean.m */; };
+		FBA617222ACDA5D3002ACDAE /* RCDUploadAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA617202ACDA5D3002ACDAE /* RCDUploadAPI.m */; };
+		FBAA67DC2B3D0FBF0065C198 /* YLSettingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FBAA67DA2B3D0FBF0065C198 /* YLSettingVC.m */; };
+		FBAA67DD2B3D0FBF0065C198 /* YLSettingVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = FBAA67DB2B3D0FBF0065C198 /* YLSettingVC.xib */; };
+		FBCD43B52AD0118800AC3C1C /* YLSatisfactionBean.m in Sources */ = {isa = PBXBuildFile; fileRef = FBCD43B42AD0118800AC3C1C /* YLSatisfactionBean.m */; };
+		FBCD43B82AD0119800AC3C1C /* YLImpressionBean.m in Sources */ = {isa = PBXBuildFile; fileRef = FBCD43B72AD0119800AC3C1C /* YLImpressionBean.m */; };
+		FBCD43BB2AD011AB00AC3C1C /* YLScoreBean.m in Sources */ = {isa = PBXBuildFile; fileRef = FBCD43BA2AD011AB00AC3C1C /* YLScoreBean.m */; };
+		FBCD43BE2AD0133000AC3C1C /* YLOptionBean.m in Sources */ = {isa = PBXBuildFile; fileRef = FBCD43BD2AD0133000AC3C1C /* YLOptionBean.m */; };
+		FBCD43C32AD04FA500AC3C1C /* YLMerchantVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FBCD43C12AD04FA500AC3C1C /* YLMerchantVC.m */; };
+		FBCD43C42AD04FA500AC3C1C /* YLMerchantVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = FBCD43C22AD04FA500AC3C1C /* YLMerchantVC.xib */; };
+		FBCD43C82AD06BD900AC3C1C /* YLBalanceCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FBCD43C62AD06BD900AC3C1C /* YLBalanceCell.m */; };
+		FBCD43C92AD06BD900AC3C1C /* YLBalanceCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FBCD43C72AD06BD900AC3C1C /* YLBalanceCell.xib */; };
+		FBCD43CC2AD06CB500AC3C1C /* YLBalanceBean.m in Sources */ = {isa = PBXBuildFile; fileRef = FBCD43CB2AD06CB500AC3C1C /* YLBalanceBean.m */; };
+		FBCDE23E2ACE556100642DB6 /* YLRechargeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FBCDE23C2ACE556100642DB6 /* YLRechargeCell.m */; };
+		FBCDE23F2ACE556100642DB6 /* YLRechargeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FBCDE23D2ACE556100642DB6 /* YLRechargeCell.xib */; };
+		FBCDE2422ACE5FFD00642DB6 /* YLRechargeBean.m in Sources */ = {isa = PBXBuildFile; fileRef = FBCDE2412ACE5FFD00642DB6 /* YLRechargeBean.m */; };
+		FBCDE2462ACE979300642DB6 /* YLOrderBean.m in Sources */ = {isa = PBXBuildFile; fileRef = FBCDE2452ACE979300642DB6 /* YLOrderBean.m */; };
+		FBCDE24A2ACEB8B600642DB6 /* YLEvaluateVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FBCDE2482ACEB8B600642DB6 /* YLEvaluateVC.m */; };
+		FBCDE24B2ACEB8B600642DB6 /* YLEvaluateVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = FBCDE2492ACEB8B600642DB6 /* YLEvaluateVC.xib */; };
+		FBCDE24F2ACEB8D300642DB6 /* YLOrderInfoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FBCDE24D2ACEB8D300642DB6 /* YLOrderInfoVC.m */; };
+		FBCDE2502ACEB8D300642DB6 /* YLOrderInfoVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = FBCDE24E2ACEB8D300642DB6 /* YLOrderInfoVC.xib */; };
+		FBCEDA572B0DF7500008E100 /* YLResetPwdVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FBCEDA552B0DF7500008E100 /* YLResetPwdVC.m */; };
+		FBCEDA582B0DF7500008E100 /* YLResetPwdVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = FBCEDA562B0DF7500008E100 /* YLResetPwdVC.xib */; };
+		FBDAF7F62ADC40F8005B0AC6 /* YLServiceBean.m in Sources */ = {isa = PBXBuildFile; fileRef = FBDAF7F52ADC40F8005B0AC6 /* YLServiceBean.m */; };
+		FBE449E52ACEEC8300BF379D /* YLSatisfactionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FBE449E32ACEEC8300BF379D /* YLSatisfactionCell.m */; };
+		FBE449E62ACEEC8300BF379D /* YLSatisfactionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FBE449E42ACEEC8300BF379D /* YLSatisfactionCell.xib */; };
+		FBE449EA2ACEECDC00BF379D /* YLImpressionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FBE449E82ACEECDC00BF379D /* YLImpressionCell.m */; };
+		FBE449EB2ACEECDC00BF379D /* YLImpressionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FBE449E92ACEECDC00BF379D /* YLImpressionCell.xib */; };
+		FBE449EF2ACEECFB00BF379D /* YLScoreCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FBE449ED2ACEECFB00BF379D /* YLScoreCell.m */; };
+		FBE449F02ACEECFB00BF379D /* YLScoreCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FBE449EE2ACEECFB00BF379D /* YLScoreCell.xib */; };
+		FBE449F22ACF0A5200BF379D /* YLprotocolV.xib in Resources */ = {isa = PBXBuildFile; fileRef = FBE449F12ACF0A5200BF379D /* YLprotocolV.xib */; };
+		FBE449F82ACF4C7400BF379D /* YLprotocolV.m in Sources */ = {isa = PBXBuildFile; fileRef = FBE449F72ACF4C7400BF379D /* YLprotocolV.m */; };
+		FBE449FD2ACFE03900BF379D /* YLMerchantListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FBE449FB2ACFE03900BF379D /* YLMerchantListVC.m */; };
+		FBE449FE2ACFE03900BF379D /* YLMerchantListVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = FBE449FC2ACFE03900BF379D /* YLMerchantListVC.xib */; };
+		FBF50D372B22C21D00219359 /* YLCarFuncCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FBF50D352B22C21D00219359 /* YLCarFuncCell.m */; };
+		FBF50D382B22C21D00219359 /* YLCarFuncCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FBF50D362B22C21D00219359 /* YLCarFuncCell.xib */; };
+		FBF50D3C2B26B21500219359 /* YLPayRateV.m in Sources */ = {isa = PBXBuildFile; fileRef = FBF50D392B26B21500219359 /* YLPayRateV.m */; };
+		FBF50D3D2B26B21500219359 /* YLPayRateV.xib in Resources */ = {isa = PBXBuildFile; fileRef = FBF50D3B2B26B21500219359 /* YLPayRateV.xib */; };
+		FBF50D402B26B6F900219359 /* YLPayRateBean.m in Sources */ = {isa = PBXBuildFile; fileRef = FBF50D3F2B26B6F900219359 /* YLPayRateBean.m */; };
+		FBF50D442B26FEA000219359 /* YLEvaluaCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FBF50D422B26FEA000219359 /* YLEvaluaCell.m */; };
+		FBF50D452B26FEA000219359 /* YLEvaluaCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FBF50D432B26FEA000219359 /* YLEvaluaCell.xib */; };
+		FBF50D482B2707CB00219359 /* YLCommentBean.m in Sources */ = {isa = PBXBuildFile; fileRef = FBF50D472B2707CB00219359 /* YLCommentBean.m */; };
+		FBF50D4D2B2837BC00219359 /* YLModifyNameV.xib in Resources */ = {isa = PBXBuildFile; fileRef = FBF50D4A2B2837BC00219359 /* YLModifyNameV.xib */; };
+		FBF50D4E2B2837BC00219359 /* YLModifyNameV.m in Sources */ = {isa = PBXBuildFile; fileRef = FBF50D4C2B2837BC00219359 /* YLModifyNameV.m */; };
+		FBF50D512B28691900219359 /* YLAreaCodeBean.m in Sources */ = {isa = PBXBuildFile; fileRef = FBF50D502B28691900219359 /* YLAreaCodeBean.m */; };
+		FBFD20252C69A40600EED696 /* YLQuestionInfoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FBFD20232C69A40600EED696 /* YLQuestionInfoVC.m */; };
+		FBFD20262C69A40600EED696 /* YLQuestionInfoVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = FBFD20242C69A40600EED696 /* YLQuestionInfoVC.xib */; };
+		FBFD202D2C69D81200EED696 /* YLTravelListVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = FBFD202C2C69D81200EED696 /* YLTravelListVC.xib */; };
+		FBFD202E2C69D81200EED696 /* YLTravelListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FBFD202B2C69D81200EED696 /* YLTravelListVC.m */; };
+		FBFD20332C69EF2F00EED696 /* YLTravelInfoVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = FBFD20322C69EF2F00EED696 /* YLTravelInfoVC.xib */; };
+		FBFD20342C69EF2F00EED696 /* YLTravelInfoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FBFD20312C69EF2F00EED696 /* YLTravelInfoVC.m */; };
+		FBFD20372C69EF5F00EED696 /* YLTravelTypeBean.m in Sources */ = {isa = PBXBuildFile; fileRef = FBFD20362C69EF5F00EED696 /* YLTravelTypeBean.m */; };
+		FBFD203A2C69EF8900EED696 /* YLTravelBean.m in Sources */ = {isa = PBXBuildFile; fileRef = FBFD20392C69EF8900EED696 /* YLTravelBean.m */; };
+		FBFD203D2C69EF9A00EED696 /* YLTravelInfoBean.m in Sources */ = {isa = PBXBuildFile; fileRef = FBFD203C2C69EF9A00EED696 /* YLTravelInfoBean.m */; };
+		FBFD20462C69F4FF00EED696 /* YLTravelListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FBFD20452C69F4FF00EED696 /* YLTravelListCell.xib */; };
+		FBFD20472C69F4FF00EED696 /* YLTravelListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FBFD20442C69F4FF00EED696 /* YLTravelListCell.m */; };
+		FBFD204A2C6C8D4200EED696 /* YLCommentV.m in Sources */ = {isa = PBXBuildFile; fileRef = FBFD20492C6C8D4200EED696 /* YLCommentV.m */; };
+		FBFD204C2C6C8E0F00EED696 /* YLCommentV.xib in Resources */ = {isa = PBXBuildFile; fileRef = FBFD204B2C6C8E0F00EED696 /* YLCommentV.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		443115FAEE6E7250A2E231AE /* Pods-luckrental.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-luckrental.release.xcconfig"; path = "Target Support Files/Pods-luckrental/Pods-luckrental.release.xcconfig"; sourceTree = "<group>"; };
+		CE5560B8ECE737D2FA2881D3 /* Pods-luckrental.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-luckrental.debug.xcconfig"; path = "Target Support Files/Pods-luckrental/Pods-luckrental.debug.xcconfig"; sourceTree = "<group>"; };
+		FB09D0962AB443050049A8C8 /* YLCarListCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLCarListCell.h; sourceTree = "<group>"; };
+		FB09D0972AB443050049A8C8 /* YLCarListCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLCarListCell.m; sourceTree = "<group>"; };
+		FB09D0982AB443050049A8C8 /* YLCarListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YLCarListCell.xib; sourceTree = "<group>"; };
+		FB09D09D2AB463AB0049A8C8 /* YLMerchantCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLMerchantCell.h; sourceTree = "<group>"; };
+		FB09D09E2AB463AB0049A8C8 /* YLMerchantCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLMerchantCell.m; sourceTree = "<group>"; };
+		FB09D09F2AB463AB0049A8C8 /* YLMerchantCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YLMerchantCell.xib; sourceTree = "<group>"; };
+		FB09D0A32AB465B80049A8C8 /* YLFeedbackVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLFeedbackVC.h; sourceTree = "<group>"; };
+		FB09D0A42AB465B80049A8C8 /* YLFeedbackVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLFeedbackVC.m; sourceTree = "<group>"; };
+		FB09D0A52AB465B80049A8C8 /* YLFeedbackVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YLFeedbackVC.xib; sourceTree = "<group>"; };
+		FB09D0AC2AB466D10049A8C8 /* YLAboutUSVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLAboutUSVC.h; sourceTree = "<group>"; };
+		FB09D0AD2AB466D10049A8C8 /* YLAboutUSVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLAboutUSVC.m; sourceTree = "<group>"; };
+		FB09D0AE2AB466D10049A8C8 /* YLAboutUSVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YLAboutUSVC.xib; sourceTree = "<group>"; };
+		FB09D0B22AB467900049A8C8 /* YLWalletVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLWalletVC.h; sourceTree = "<group>"; };
+		FB09D0B32AB467900049A8C8 /* YLWalletVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLWalletVC.m; sourceTree = "<group>"; };
+		FB09D0B42AB467900049A8C8 /* YLWalletVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YLWalletVC.xib; sourceTree = "<group>"; };
+		FB09D0B82AB575150049A8C8 /* YLRechargeVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLRechargeVC.h; sourceTree = "<group>"; };
+		FB09D0B92AB575150049A8C8 /* YLRechargeVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLRechargeVC.m; sourceTree = "<group>"; };
+		FB09D0BA2AB575150049A8C8 /* YLRechargeVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YLRechargeVC.xib; sourceTree = "<group>"; };
+		FB09D0BE2AB5938C0049A8C8 /* YLCurOrderVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLCurOrderVC.h; sourceTree = "<group>"; };
+		FB09D0BF2AB5938C0049A8C8 /* YLCurOrderVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLCurOrderVC.m; sourceTree = "<group>"; };
+		FB09D0C12AB593BE0049A8C8 /* YLHistoryOrderVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLHistoryOrderVC.h; sourceTree = "<group>"; };
+		FB09D0C22AB593BE0049A8C8 /* YLHistoryOrderVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLHistoryOrderVC.m; sourceTree = "<group>"; };
+		FB09D0C42AB593F50049A8C8 /* YLCurOrderCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLCurOrderCell.h; sourceTree = "<group>"; };
+		FB09D0C52AB593F50049A8C8 /* YLCurOrderCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLCurOrderCell.m; sourceTree = "<group>"; };
+		FB09D0C62AB593F50049A8C8 /* YLCurOrderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YLCurOrderCell.xib; sourceTree = "<group>"; };
+		FB09D0C92AB594130049A8C8 /* YLHistoryOrderCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLHistoryOrderCell.h; sourceTree = "<group>"; };
+		FB09D0CA2AB594130049A8C8 /* YLHistoryOrderCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLHistoryOrderCell.m; sourceTree = "<group>"; };
+		FB09D0CB2AB594130049A8C8 /* YLHistoryOrderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YLHistoryOrderCell.xib; sourceTree = "<group>"; };
+		FB09D0CF2AB8317A0049A8C8 /* YLCarBean.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLCarBean.h; sourceTree = "<group>"; };
+		FB09D0D02AB8317A0049A8C8 /* YLCarBean.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLCarBean.m; sourceTree = "<group>"; };
+		FB09D0D32AB83B150049A8C8 /* YLMerchantBean.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLMerchantBean.h; sourceTree = "<group>"; };
+		FB09D0D42AB83B150049A8C8 /* YLMerchantBean.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLMerchantBean.m; sourceTree = "<group>"; };
+		FB09D0D62AB83D7C0049A8C8 /* YLCarListVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLCarListVC.h; sourceTree = "<group>"; };
+		FB09D0D72AB83D7C0049A8C8 /* YLCarListVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLCarListVC.m; sourceTree = "<group>"; };
+		FB09D0D82AB83D7C0049A8C8 /* YLCarListVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YLCarListVC.xib; sourceTree = "<group>"; };
+		FB09D0DB2AB8434B0049A8C8 /* YLCarInfoVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLCarInfoVC.h; sourceTree = "<group>"; };
+		FB09D0DC2AB8434B0049A8C8 /* YLCarInfoVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLCarInfoVC.m; sourceTree = "<group>"; };
+		FB09D0DD2AB8434B0049A8C8 /* YLCarInfoVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YLCarInfoVC.xib; sourceTree = "<group>"; };
+		FB0B226B2B31C8F0009F303D /* YLWebVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLWebVC.h; sourceTree = "<group>"; };
+		FB0B226C2B31C8F0009F303D /* YLWebVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLWebVC.m; sourceTree = "<group>"; };
+		FB14E1AD2B0BAF7800A746F2 /* YLLocationBean.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLLocationBean.h; sourceTree = "<group>"; };
+		FB14E1AE2B0BAF7800A746F2 /* YLLocationBean.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLLocationBean.m; sourceTree = "<group>"; };
+		FB1914AC2B01F4CF006F60BB /* YLPayInfoBean.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLPayInfoBean.h; sourceTree = "<group>"; };
+		FB1914AD2B01F4CF006F60BB /* YLPayInfoBean.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLPayInfoBean.m; sourceTree = "<group>"; };
+		FB23C5952AD0BCCD00E51DB9 /* YLServicesBean.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLServicesBean.h; sourceTree = "<group>"; };
+		FB23C5962AD0BCCD00E51DB9 /* YLServicesBean.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLServicesBean.m; sourceTree = "<group>"; };
+		FB265F242C64CE25006FF1E2 /* YLQuestionListCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLQuestionListCell.h; sourceTree = "<group>"; };
+		FB265F252C64CE25006FF1E2 /* YLQuestionListCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLQuestionListCell.m; sourceTree = "<group>"; };
+		FB265F262C64CE25006FF1E2 /* YLQuestionListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YLQuestionListCell.xib; sourceTree = "<group>"; };
+		FB265F292C64CFE3006FF1E2 /* YLQuestionCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLQuestionCell.h; sourceTree = "<group>"; };
+		FB265F2A2C64CFE3006FF1E2 /* YLQuestionCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLQuestionCell.m; sourceTree = "<group>"; };
+		FB265F2B2C64CFE3006FF1E2 /* YLQuestionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YLQuestionCell.xib; sourceTree = "<group>"; };
+		FB265F2E2C690F23006FF1E2 /* YLQuestionBean.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLQuestionBean.h; sourceTree = "<group>"; };
+		FB265F2F2C690F23006FF1E2 /* YLQuestionBean.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLQuestionBean.m; sourceTree = "<group>"; };
+		FB2B01522C60D93400C34693 /* YLQuestionListVc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLQuestionListVc.h; sourceTree = "<group>"; };
+		FB2B01532C60D93400C34693 /* YLQuestionListVc.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLQuestionListVc.m; sourceTree = "<group>"; };
+		FB2B01542C60D93400C34693 /* YLQuestionListVc.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YLQuestionListVc.xib; sourceTree = "<group>"; };
+		FB2EA7792C70F5D3008C40AC /* YLEvaluaCell2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLEvaluaCell2.h; sourceTree = "<group>"; };
+		FB2EA77A2C70F5D3008C40AC /* YLEvaluaCell2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLEvaluaCell2.m; sourceTree = "<group>"; };
+		FB2EA77B2C70F5D3008C40AC /* YLEvaluaCell2.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YLEvaluaCell2.xib; sourceTree = "<group>"; };
+		FB405BD92AB2DAC1008652CC /* YLHTTPUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLHTTPUtility.m; sourceTree = "<group>"; };
+		FB405BDA2AB2DAC1008652CC /* YLHTTPResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLHTTPResult.m; sourceTree = "<group>"; };
+		FB405BDB2AB2DAC1008652CC /* YLHTTPResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLHTTPResult.h; sourceTree = "<group>"; };
+		FB405BDC2AB2DAC1008652CC /* YLHTTPUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLHTTPUtility.h; sourceTree = "<group>"; };
+		FB405BE62AB2DB87008652CC /* RCDCommonDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RCDCommonDefine.h; sourceTree = "<group>"; };
+		FB405BE72AB2DC2D008652CC /* RCDCommonString.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RCDCommonString.h; sourceTree = "<group>"; };
+		FB405BE82AB2F3B4008652CC /* YLLoginVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YLLoginVC.m; path = luckrental/UI/Login/YLLoginVC.m; sourceTree = SOURCE_ROOT; };
+		FB405BE92AB2F3B4008652CC /* YLLoginVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = YLLoginVC.xib; path = luckrental/UI/Login/YLLoginVC.xib; sourceTree = SOURCE_ROOT; };
+		FB405BEA2AB2F3B4008652CC /* YLLoginVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YLLoginVC.h; path = luckrental/UI/Login/YLLoginVC.h; sourceTree = SOURCE_ROOT; };
+		FB405BED2AB2F3D3008652CC /* RCDMainTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCDMainTabBarViewController.m; sourceTree = "<group>"; };
+		FB405BEE2AB2F3D3008652CC /* RCDMainTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCDMainTabBarViewController.h; sourceTree = "<group>"; };
+		FB405BEF2AB2F3D3008652CC /* RCDNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCDNavigationViewController.m; sourceTree = "<group>"; };
+		FB405BF02AB2F3D3008652CC /* RCDNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCDNavigationViewController.h; sourceTree = "<group>"; };
+		FB405BF82AB2F944008652CC /* YLBaseVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLBaseVC.m; sourceTree = "<group>"; };
+		FB405BF92AB2F944008652CC /* YLBaseVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLBaseVC.h; sourceTree = "<group>"; };
+		FB405BFC2AB30065008652CC /* YLHomeVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLHomeVC.h; sourceTree = "<group>"; };
+		FB405BFD2AB30065008652CC /* YLHomeVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLHomeVC.m; sourceTree = "<group>"; };
+		FB405BFE2AB30065008652CC /* YLHomeVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YLHomeVC.xib; sourceTree = "<group>"; };
+		FB405C022AB30F07008652CC /* YLMineVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLMineVC.h; sourceTree = "<group>"; };
+		FB405C032AB30F07008652CC /* YLMineVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLMineVC.m; sourceTree = "<group>"; };
+		FB405C042AB30F07008652CC /* YLMineVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YLMineVC.xib; sourceTree = "<group>"; };
+		FB497CF52BA892DD003630DB /* YLPartnersCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLPartnersCell.h; sourceTree = "<group>"; };
+		FB497CF62BA892DD003630DB /* YLPartnersCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLPartnersCell.m; sourceTree = "<group>"; };
+		FB497CF72BA892DD003630DB /* YLPartnersCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YLPartnersCell.xib; sourceTree = "<group>"; };
+		FB497CFA2BA898CC003630DB /* YLPartnersBean.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLPartnersBean.h; sourceTree = "<group>"; };
+		FB497CFB2BA898CC003630DB /* YLPartnersBean.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLPartnersBean.m; sourceTree = "<group>"; };
+		FB6108562AD7C65B0050868E /* RCDLanguageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCDLanguageManager.h; sourceTree = "<group>"; };
+		FB6108572AD7C65B0050868E /* RCDLanguageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCDLanguageManager.m; sourceTree = "<group>"; };
+		FB6108652AD7D1470050868E /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
+		FB6108672AD7D59D0050868E /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Main.strings; sourceTree = "<group>"; };
+		FB6108682AD7D5B20050868E /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		FB6108692AD7D5DE0050868E /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Localizable.strings; sourceTree = "<group>"; };
+		FB6431B62AB2BB3000F9DE2C /* luckrental.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = luckrental.entitlements; sourceTree = "<group>"; };
+		FB6593EE2AE422EA0039EF0A /* YLCountryBean.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLCountryBean.h; sourceTree = "<group>"; };
+		FB6593EF2AE422EA0039EF0A /* YLCountryBean.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLCountryBean.m; sourceTree = "<group>"; };
+		FB7DC95D2ADE8B82002937C8 /* NSBundle+language.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSBundle+language.h"; sourceTree = "<group>"; };
+		FB7DC95E2ADE8B82002937C8 /* NSBundle+language.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+language.m"; sourceTree = "<group>"; };
+		FB8ECC8D2C60E01C00600A8C /* YLQuestionListBean.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLQuestionListBean.h; sourceTree = "<group>"; };
+		FB8ECC8E2C60E01C00600A8C /* YLQuestionListBean.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLQuestionListBean.m; sourceTree = "<group>"; };
+		FB91269C2AAF6DD00089E6D7 /* luckrental.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = luckrental.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB91269F2AAF6DD00089E6D7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FB9126A02AAF6DD00089E6D7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FB9126A22AAF6DD00089E6D7 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		FB9126A32AAF6DD00089E6D7 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		FB9126A52AAF6DD00089E6D7 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		FB9126A62AAF6DD00089E6D7 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		FB9126A92AAF6DD00089E6D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FB9126AB2AAF6DD10089E6D7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FB9126AE2AAF6DD10089E6D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FB9126B02AAF6DD10089E6D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB9126B12AAF6DD10089E6D7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FBA616F82AC1DAD7002ACDAE /* YLSummitOrderVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLSummitOrderVC.h; sourceTree = "<group>"; };
+		FBA616F92AC1DAD7002ACDAE /* YLSummitOrderVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLSummitOrderVC.m; sourceTree = "<group>"; };
+		FBA616FA2AC1DAD7002ACDAE /* YLSummitOrderVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YLSummitOrderVC.xib; sourceTree = "<group>"; };
+		FBA616FD2AC2CE52002ACDAE /* YLPayOrder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLPayOrder.h; sourceTree = "<group>"; };
+		FBA616FE2AC2CE52002ACDAE /* YLPayOrder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLPayOrder.m; sourceTree = "<group>"; };
+		FBA616FF2AC2CE52002ACDAE /* YLPayOrder.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YLPayOrder.xib; sourceTree = "<group>"; };
+		FBA617032AC2EA02002ACDAE /* YLPayUploadV.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLPayUploadV.h; sourceTree = "<group>"; };
+		FBA617042AC2EA02002ACDAE /* YLPayUploadV.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLPayUploadV.m; sourceTree = "<group>"; };
+		FBA617062AC3FCB5002ACDAE /* YLPayUploadV.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YLPayUploadV.xib; sourceTree = "<group>"; };
+		FBA6170B2AC40EB5002ACDAE /* UIView+Nib.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Nib.m"; sourceTree = "<group>"; };
+		FBA6170C2AC40EB5002ACDAE /* UIView+Nib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Nib.h"; sourceTree = "<group>"; };
+		FBA6170E2AC41474002ACDAE /* UIView+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Additions.m"; sourceTree = "<group>"; };
+		FBA6170F2AC41474002ACDAE /* UIView+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Additions.h"; sourceTree = "<group>"; };
+		FBA617122ACBB790002ACDAE /* YLRegidterVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLRegidterVC.h; sourceTree = "<group>"; };
+		FBA617132ACBB790002ACDAE /* YLRegidterVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLRegidterVC.m; sourceTree = "<group>"; };
+		FBA617142ACBB790002ACDAE /* YLRegidterVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = YLRegidterVC.xib; path = luckrental/UI/Login/YLRegidterVC.xib; sourceTree = SOURCE_ROOT; };
+		FBA6171A2ACC14A1002ACDAE /* YLBannerBean.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLBannerBean.h; sourceTree = "<group>"; };
+		FBA6171B2ACC14A1002ACDAE /* YLBannerBean.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLBannerBean.m; sourceTree = "<group>"; };
+		FBA617202ACDA5D3002ACDAE /* RCDUploadAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCDUploadAPI.m; sourceTree = "<group>"; };
+		FBA617212ACDA5D3002ACDAE /* RCDUploadAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCDUploadAPI.h; sourceTree = "<group>"; };
+		FBAA67D92B3D0FBF0065C198 /* YLSettingVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLSettingVC.h; sourceTree = "<group>"; };
+		FBAA67DA2B3D0FBF0065C198 /* YLSettingVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLSettingVC.m; sourceTree = "<group>"; };
+		FBAA67DB2B3D0FBF0065C198 /* YLSettingVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YLSettingVC.xib; sourceTree = "<group>"; };
+		FBCD43B32AD0118800AC3C1C /* YLSatisfactionBean.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLSatisfactionBean.h; sourceTree = "<group>"; };
+		FBCD43B42AD0118800AC3C1C /* YLSatisfactionBean.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLSatisfactionBean.m; sourceTree = "<group>"; };
+		FBCD43B62AD0119800AC3C1C /* YLImpressionBean.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLImpressionBean.h; sourceTree = "<group>"; };
+		FBCD43B72AD0119800AC3C1C /* YLImpressionBean.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLImpressionBean.m; sourceTree = "<group>"; };
+		FBCD43B92AD011AB00AC3C1C /* YLScoreBean.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLScoreBean.h; sourceTree = "<group>"; };
+		FBCD43BA2AD011AB00AC3C1C /* YLScoreBean.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLScoreBean.m; sourceTree = "<group>"; };
+		FBCD43BC2AD0133000AC3C1C /* YLOptionBean.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLOptionBean.h; sourceTree = "<group>"; };
+		FBCD43BD2AD0133000AC3C1C /* YLOptionBean.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLOptionBean.m; sourceTree = "<group>"; };
+		FBCD43C02AD04FA500AC3C1C /* YLMerchantVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLMerchantVC.h; sourceTree = "<group>"; };
+		FBCD43C12AD04FA500AC3C1C /* YLMerchantVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLMerchantVC.m; sourceTree = "<group>"; };
+		FBCD43C22AD04FA500AC3C1C /* YLMerchantVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YLMerchantVC.xib; sourceTree = "<group>"; };
+		FBCD43C52AD06BD900AC3C1C /* YLBalanceCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLBalanceCell.h; sourceTree = "<group>"; };
+		FBCD43C62AD06BD900AC3C1C /* YLBalanceCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLBalanceCell.m; sourceTree = "<group>"; };
+		FBCD43C72AD06BD900AC3C1C /* YLBalanceCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YLBalanceCell.xib; sourceTree = "<group>"; };
+		FBCD43CA2AD06CB500AC3C1C /* YLBalanceBean.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLBalanceBean.h; sourceTree = "<group>"; };
+		FBCD43CB2AD06CB500AC3C1C /* YLBalanceBean.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLBalanceBean.m; sourceTree = "<group>"; };
+		FBCDE23B2ACE556100642DB6 /* YLRechargeCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLRechargeCell.h; sourceTree = "<group>"; };
+		FBCDE23C2ACE556100642DB6 /* YLRechargeCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLRechargeCell.m; sourceTree = "<group>"; };
+		FBCDE23D2ACE556100642DB6 /* YLRechargeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YLRechargeCell.xib; sourceTree = "<group>"; };
+		FBCDE2402ACE5FFD00642DB6 /* YLRechargeBean.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLRechargeBean.h; sourceTree = "<group>"; };
+		FBCDE2412ACE5FFD00642DB6 /* YLRechargeBean.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLRechargeBean.m; sourceTree = "<group>"; };
+		FBCDE2442ACE979300642DB6 /* YLOrderBean.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLOrderBean.h; sourceTree = "<group>"; };
+		FBCDE2452ACE979300642DB6 /* YLOrderBean.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLOrderBean.m; sourceTree = "<group>"; };
+		FBCDE2472ACEB8B600642DB6 /* YLEvaluateVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLEvaluateVC.h; sourceTree = "<group>"; };
+		FBCDE2482ACEB8B600642DB6 /* YLEvaluateVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLEvaluateVC.m; sourceTree = "<group>"; };
+		FBCDE2492ACEB8B600642DB6 /* YLEvaluateVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YLEvaluateVC.xib; sourceTree = "<group>"; };
+		FBCDE24C2ACEB8D300642DB6 /* YLOrderInfoVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLOrderInfoVC.h; sourceTree = "<group>"; };
+		FBCDE24D2ACEB8D300642DB6 /* YLOrderInfoVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLOrderInfoVC.m; sourceTree = "<group>"; };
+		FBCDE24E2ACEB8D300642DB6 /* YLOrderInfoVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YLOrderInfoVC.xib; sourceTree = "<group>"; };
+		FBCEDA542B0DF7500008E100 /* YLResetPwdVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLResetPwdVC.h; sourceTree = "<group>"; };
+		FBCEDA552B0DF7500008E100 /* YLResetPwdVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLResetPwdVC.m; sourceTree = "<group>"; };
+		FBCEDA562B0DF7500008E100 /* YLResetPwdVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YLResetPwdVC.xib; sourceTree = "<group>"; };
+		FBDAF7D02AD7F4AB005B0AC6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		FBDAF7D12AD7F4BB005B0AC6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		FBDAF7D22AD7F4CB005B0AC6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		FBDAF7D32AD7FD1C005B0AC6 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Main.strings"; sourceTree = "<group>"; };
+		FBDAF7D42AD7FD2F005B0AC6 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		FBDAF7D52AD7FD41005B0AC6 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		FBDAF7F42ADC40F8005B0AC6 /* YLServiceBean.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLServiceBean.h; sourceTree = "<group>"; };
+		FBDAF7F52ADC40F8005B0AC6 /* YLServiceBean.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLServiceBean.m; sourceTree = "<group>"; };
+		FBE449E22ACEEC8300BF379D /* YLSatisfactionCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLSatisfactionCell.h; sourceTree = "<group>"; };
+		FBE449E32ACEEC8300BF379D /* YLSatisfactionCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLSatisfactionCell.m; sourceTree = "<group>"; };
+		FBE449E42ACEEC8300BF379D /* YLSatisfactionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YLSatisfactionCell.xib; sourceTree = "<group>"; };
+		FBE449E72ACEECDC00BF379D /* YLImpressionCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLImpressionCell.h; sourceTree = "<group>"; };
+		FBE449E82ACEECDC00BF379D /* YLImpressionCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLImpressionCell.m; sourceTree = "<group>"; };
+		FBE449E92ACEECDC00BF379D /* YLImpressionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YLImpressionCell.xib; sourceTree = "<group>"; };
+		FBE449EC2ACEECFB00BF379D /* YLScoreCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLScoreCell.h; sourceTree = "<group>"; };
+		FBE449ED2ACEECFB00BF379D /* YLScoreCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLScoreCell.m; sourceTree = "<group>"; };
+		FBE449EE2ACEECFB00BF379D /* YLScoreCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YLScoreCell.xib; sourceTree = "<group>"; };
+		FBE449F12ACF0A5200BF379D /* YLprotocolV.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YLprotocolV.xib; sourceTree = "<group>"; };
+		FBE449F62ACF4C7400BF379D /* YLprotocolV.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLprotocolV.h; sourceTree = "<group>"; };
+		FBE449F72ACF4C7400BF379D /* YLprotocolV.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLprotocolV.m; sourceTree = "<group>"; };
+		FBE449FA2ACFE03900BF379D /* YLMerchantListVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLMerchantListVC.h; sourceTree = "<group>"; };
+		FBE449FB2ACFE03900BF379D /* YLMerchantListVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLMerchantListVC.m; sourceTree = "<group>"; };
+		FBE449FC2ACFE03900BF379D /* YLMerchantListVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YLMerchantListVC.xib; sourceTree = "<group>"; };
+		FBF50D342B22C21D00219359 /* YLCarFuncCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLCarFuncCell.h; sourceTree = "<group>"; };
+		FBF50D352B22C21D00219359 /* YLCarFuncCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLCarFuncCell.m; sourceTree = "<group>"; };
+		FBF50D362B22C21D00219359 /* YLCarFuncCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YLCarFuncCell.xib; sourceTree = "<group>"; };
+		FBF50D392B26B21500219359 /* YLPayRateV.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLPayRateV.m; sourceTree = "<group>"; };
+		FBF50D3A2B26B21500219359 /* YLPayRateV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLPayRateV.h; sourceTree = "<group>"; };
+		FBF50D3B2B26B21500219359 /* YLPayRateV.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YLPayRateV.xib; sourceTree = "<group>"; };
+		FBF50D3E2B26B6F900219359 /* YLPayRateBean.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLPayRateBean.h; sourceTree = "<group>"; };
+		FBF50D3F2B26B6F900219359 /* YLPayRateBean.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLPayRateBean.m; sourceTree = "<group>"; };
+		FBF50D412B26FEA000219359 /* YLEvaluaCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLEvaluaCell.h; sourceTree = "<group>"; };
+		FBF50D422B26FEA000219359 /* YLEvaluaCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLEvaluaCell.m; sourceTree = "<group>"; };
+		FBF50D432B26FEA000219359 /* YLEvaluaCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YLEvaluaCell.xib; sourceTree = "<group>"; };
+		FBF50D462B2707CB00219359 /* YLCommentBean.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLCommentBean.h; sourceTree = "<group>"; };
+		FBF50D472B2707CB00219359 /* YLCommentBean.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLCommentBean.m; sourceTree = "<group>"; };
+		FBF50D4A2B2837BC00219359 /* YLModifyNameV.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YLModifyNameV.xib; sourceTree = "<group>"; };
+		FBF50D4B2B2837BC00219359 /* YLModifyNameV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLModifyNameV.h; sourceTree = "<group>"; };
+		FBF50D4C2B2837BC00219359 /* YLModifyNameV.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLModifyNameV.m; sourceTree = "<group>"; };
+		FBF50D4F2B28691900219359 /* YLAreaCodeBean.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLAreaCodeBean.h; sourceTree = "<group>"; };
+		FBF50D502B28691900219359 /* YLAreaCodeBean.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLAreaCodeBean.m; sourceTree = "<group>"; };
+		FBFD20222C69A40600EED696 /* YLQuestionInfoVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLQuestionInfoVC.h; sourceTree = "<group>"; };
+		FBFD20232C69A40600EED696 /* YLQuestionInfoVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLQuestionInfoVC.m; sourceTree = "<group>"; };
+		FBFD20242C69A40600EED696 /* YLQuestionInfoVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YLQuestionInfoVC.xib; sourceTree = "<group>"; };
+		FBFD202A2C69D81200EED696 /* YLTravelListVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLTravelListVC.h; sourceTree = "<group>"; };
+		FBFD202B2C69D81200EED696 /* YLTravelListVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLTravelListVC.m; sourceTree = "<group>"; };
+		FBFD202C2C69D81200EED696 /* YLTravelListVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YLTravelListVC.xib; sourceTree = "<group>"; };
+		FBFD20302C69EF2F00EED696 /* YLTravelInfoVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLTravelInfoVC.h; sourceTree = "<group>"; };
+		FBFD20312C69EF2F00EED696 /* YLTravelInfoVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLTravelInfoVC.m; sourceTree = "<group>"; };
+		FBFD20322C69EF2F00EED696 /* YLTravelInfoVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YLTravelInfoVC.xib; sourceTree = "<group>"; };
+		FBFD20352C69EF5F00EED696 /* YLTravelTypeBean.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLTravelTypeBean.h; sourceTree = "<group>"; };
+		FBFD20362C69EF5F00EED696 /* YLTravelTypeBean.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLTravelTypeBean.m; sourceTree = "<group>"; };
+		FBFD20382C69EF8900EED696 /* YLTravelBean.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLTravelBean.h; sourceTree = "<group>"; };
+		FBFD20392C69EF8900EED696 /* YLTravelBean.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLTravelBean.m; sourceTree = "<group>"; };
+		FBFD203B2C69EF9A00EED696 /* YLTravelInfoBean.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLTravelInfoBean.h; sourceTree = "<group>"; };
+		FBFD203C2C69EF9A00EED696 /* YLTravelInfoBean.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLTravelInfoBean.m; sourceTree = "<group>"; };
+		FBFD20432C69F4FF00EED696 /* YLTravelListCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLTravelListCell.h; sourceTree = "<group>"; };
+		FBFD20442C69F4FF00EED696 /* YLTravelListCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLTravelListCell.m; sourceTree = "<group>"; };
+		FBFD20452C69F4FF00EED696 /* YLTravelListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YLTravelListCell.xib; sourceTree = "<group>"; };
+		FBFD20482C6C8D4200EED696 /* YLCommentV.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLCommentV.h; sourceTree = "<group>"; };
+		FBFD20492C6C8D4200EED696 /* YLCommentV.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLCommentV.m; sourceTree = "<group>"; };
+		FBFD204B2C6C8E0F00EED696 /* YLCommentV.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YLCommentV.xib; sourceTree = "<group>"; };
+		FC30BE0163DEC79BCD1C0466 /* Pods_luckrental.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_luckrental.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FB9126992AAF6DD00089E6D7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C1990AB33148537BC4409B8 /* Pods_luckrental.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0E6E90557016018FBE5ECCA5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CE5560B8ECE737D2FA2881D3 /* Pods-luckrental.debug.xcconfig */,
+				443115FAEE6E7250A2E231AE /* Pods-luckrental.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		AA45845BE45270EBCA46BB54 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FC30BE0163DEC79BCD1C0466 /* Pods_luckrental.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FB09D0952AB442C90049A8C8 /* Car */ = {
+			isa = PBXGroup;
+			children = (
+				FB09D0962AB443050049A8C8 /* YLCarListCell.h */,
+				FB09D0972AB443050049A8C8 /* YLCarListCell.m */,
+				FB09D0982AB443050049A8C8 /* YLCarListCell.xib */,
+				FB09D0CF2AB8317A0049A8C8 /* YLCarBean.h */,
+				FB09D0D02AB8317A0049A8C8 /* YLCarBean.m */,
+				FB09D0D62AB83D7C0049A8C8 /* YLCarListVC.h */,
+				FB09D0D72AB83D7C0049A8C8 /* YLCarListVC.m */,
+				FB09D0D82AB83D7C0049A8C8 /* YLCarListVC.xib */,
+				FB09D0DB2AB8434B0049A8C8 /* YLCarInfoVC.h */,
+				FB09D0DC2AB8434B0049A8C8 /* YLCarInfoVC.m */,
+				FB09D0DD2AB8434B0049A8C8 /* YLCarInfoVC.xib */,
+				FBF50D342B22C21D00219359 /* YLCarFuncCell.h */,
+				FBF50D352B22C21D00219359 /* YLCarFuncCell.m */,
+				FBF50D362B22C21D00219359 /* YLCarFuncCell.xib */,
+			);
+			path = Car;
+			sourceTree = "<group>";
+		};
+		FB09D09B2AB461FA0049A8C8 /* Merchant */ = {
+			isa = PBXGroup;
+			children = (
+				FB09D09D2AB463AB0049A8C8 /* YLMerchantCell.h */,
+				FB09D09E2AB463AB0049A8C8 /* YLMerchantCell.m */,
+				FB09D09F2AB463AB0049A8C8 /* YLMerchantCell.xib */,
+				FB09D0D32AB83B150049A8C8 /* YLMerchantBean.h */,
+				FB09D0D42AB83B150049A8C8 /* YLMerchantBean.m */,
+				FBE449FA2ACFE03900BF379D /* YLMerchantListVC.h */,
+				FBE449FB2ACFE03900BF379D /* YLMerchantListVC.m */,
+				FBE449FC2ACFE03900BF379D /* YLMerchantListVC.xib */,
+				FBCD43C02AD04FA500AC3C1C /* YLMerchantVC.h */,
+				FBCD43C12AD04FA500AC3C1C /* YLMerchantVC.m */,
+				FBCD43C22AD04FA500AC3C1C /* YLMerchantVC.xib */,
+			);
+			path = Merchant;
+			sourceTree = "<group>";
+		};
+		FB09D0A22AB465860049A8C8 /* Feedback */ = {
+			isa = PBXGroup;
+			children = (
+				FB09D0A32AB465B80049A8C8 /* YLFeedbackVC.h */,
+				FB09D0A42AB465B80049A8C8 /* YLFeedbackVC.m */,
+				FB09D0A52AB465B80049A8C8 /* YLFeedbackVC.xib */,
+			);
+			path = Feedback;
+			sourceTree = "<group>";
+		};
+		FB09D0A82AB466350049A8C8 /* AboutUS */ = {
+			isa = PBXGroup;
+			children = (
+				FB09D0AC2AB466D10049A8C8 /* YLAboutUSVC.h */,
+				FB09D0AD2AB466D10049A8C8 /* YLAboutUSVC.m */,
+				FB09D0AE2AB466D10049A8C8 /* YLAboutUSVC.xib */,
+				FB497CF52BA892DD003630DB /* YLPartnersCell.h */,
+				FB497CF62BA892DD003630DB /* YLPartnersCell.m */,
+				FB497CF72BA892DD003630DB /* YLPartnersCell.xib */,
+				FB497CFA2BA898CC003630DB /* YLPartnersBean.h */,
+				FB497CFB2BA898CC003630DB /* YLPartnersBean.m */,
+			);
+			path = AboutUS;
+			sourceTree = "<group>";
+		};
+		FB09D0B12AB467700049A8C8 /* Wallet */ = {
+			isa = PBXGroup;
+			children = (
+				FBA617022AC2E742002ACDAE /* Pay */,
+				FB09D0B72AB574F00049A8C8 /* Recharge */,
+				FB09D0B22AB467900049A8C8 /* YLWalletVC.h */,
+				FB09D0B32AB467900049A8C8 /* YLWalletVC.m */,
+				FB09D0B42AB467900049A8C8 /* YLWalletVC.xib */,
+				FBCD43C52AD06BD900AC3C1C /* YLBalanceCell.h */,
+				FBCD43C62AD06BD900AC3C1C /* YLBalanceCell.m */,
+				FBCD43C72AD06BD900AC3C1C /* YLBalanceCell.xib */,
+				FBCD43CA2AD06CB500AC3C1C /* YLBalanceBean.h */,
+				FBCD43CB2AD06CB500AC3C1C /* YLBalanceBean.m */,
+			);
+			path = Wallet;
+			sourceTree = "<group>";
+		};
+		FB09D0B72AB574F00049A8C8 /* Recharge */ = {
+			isa = PBXGroup;
+			children = (
+				FB09D0B82AB575150049A8C8 /* YLRechargeVC.h */,
+				FB09D0B92AB575150049A8C8 /* YLRechargeVC.m */,
+				FB09D0BA2AB575150049A8C8 /* YLRechargeVC.xib */,
+				FBCDE23B2ACE556100642DB6 /* YLRechargeCell.h */,
+				FBCDE23C2ACE556100642DB6 /* YLRechargeCell.m */,
+				FBCDE23D2ACE556100642DB6 /* YLRechargeCell.xib */,
+				FBCDE2402ACE5FFD00642DB6 /* YLRechargeBean.h */,
+				FBCDE2412ACE5FFD00642DB6 /* YLRechargeBean.m */,
+			);
+			path = Recharge;
+			sourceTree = "<group>";
+		};
+		FB09D0BD2AB5935C0049A8C8 /* Order */ = {
+			isa = PBXGroup;
+			children = (
+				FB09D0C42AB593F50049A8C8 /* YLCurOrderCell.h */,
+				FB09D0C52AB593F50049A8C8 /* YLCurOrderCell.m */,
+				FB09D0C62AB593F50049A8C8 /* YLCurOrderCell.xib */,
+				FB09D0BE2AB5938C0049A8C8 /* YLCurOrderVC.h */,
+				FB09D0BF2AB5938C0049A8C8 /* YLCurOrderVC.m */,
+				FB09D0C92AB594130049A8C8 /* YLHistoryOrderCell.h */,
+				FB09D0CA2AB594130049A8C8 /* YLHistoryOrderCell.m */,
+				FB09D0CB2AB594130049A8C8 /* YLHistoryOrderCell.xib */,
+				FB09D0C12AB593BE0049A8C8 /* YLHistoryOrderVC.h */,
+				FB09D0C22AB593BE0049A8C8 /* YLHistoryOrderVC.m */,
+				FBCDE2442ACE979300642DB6 /* YLOrderBean.h */,
+				FBCDE2452ACE979300642DB6 /* YLOrderBean.m */,
+				FBA616FD2AC2CE52002ACDAE /* YLPayOrder.h */,
+				FBA616FE2AC2CE52002ACDAE /* YLPayOrder.m */,
+				FBA616FF2AC2CE52002ACDAE /* YLPayOrder.xib */,
+				FBA616F82AC1DAD7002ACDAE /* YLSummitOrderVC.h */,
+				FBA616F92AC1DAD7002ACDAE /* YLSummitOrderVC.m */,
+				FBA616FA2AC1DAD7002ACDAE /* YLSummitOrderVC.xib */,
+				FBCDE2472ACEB8B600642DB6 /* YLEvaluateVC.h */,
+				FBCDE2482ACEB8B600642DB6 /* YLEvaluateVC.m */,
+				FBCDE2492ACEB8B600642DB6 /* YLEvaluateVC.xib */,
+				FBCDE24C2ACEB8D300642DB6 /* YLOrderInfoVC.h */,
+				FBCDE24D2ACEB8D300642DB6 /* YLOrderInfoVC.m */,
+				FBCDE24E2ACEB8D300642DB6 /* YLOrderInfoVC.xib */,
+				FB23C5952AD0BCCD00E51DB9 /* YLServicesBean.h */,
+				FB23C5962AD0BCCD00E51DB9 /* YLServicesBean.m */,
+				FB1914AC2B01F4CF006F60BB /* YLPayInfoBean.h */,
+				FB1914AD2B01F4CF006F60BB /* YLPayInfoBean.m */,
+				FB14E1AD2B0BAF7800A746F2 /* YLLocationBean.h */,
+				FB14E1AE2B0BAF7800A746F2 /* YLLocationBean.m */,
+				FBF50D4F2B28691900219359 /* YLAreaCodeBean.h */,
+				FBF50D502B28691900219359 /* YLAreaCodeBean.m */,
+			);
+			path = Order;
+			sourceTree = "<group>";
+		};
+		FB2EBC842C60D5620059B300 /* Question */ = {
+			isa = PBXGroup;
+			children = (
+				FB2B01522C60D93400C34693 /* YLQuestionListVc.h */,
+				FB2B01532C60D93400C34693 /* YLQuestionListVc.m */,
+				FB2B01542C60D93400C34693 /* YLQuestionListVc.xib */,
+				FB8ECC8D2C60E01C00600A8C /* YLQuestionListBean.h */,
+				FB8ECC8E2C60E01C00600A8C /* YLQuestionListBean.m */,
+				FB265F242C64CE25006FF1E2 /* YLQuestionListCell.h */,
+				FB265F252C64CE25006FF1E2 /* YLQuestionListCell.m */,
+				FB265F262C64CE25006FF1E2 /* YLQuestionListCell.xib */,
+				FB265F292C64CFE3006FF1E2 /* YLQuestionCell.h */,
+				FB265F2A2C64CFE3006FF1E2 /* YLQuestionCell.m */,
+				FB265F2B2C64CFE3006FF1E2 /* YLQuestionCell.xib */,
+				FB265F2E2C690F23006FF1E2 /* YLQuestionBean.h */,
+				FB265F2F2C690F23006FF1E2 /* YLQuestionBean.m */,
+				FBFD20222C69A40600EED696 /* YLQuestionInfoVC.h */,
+				FBFD20232C69A40600EED696 /* YLQuestionInfoVC.m */,
+				FBFD20242C69A40600EED696 /* YLQuestionInfoVC.xib */,
+			);
+			path = Question;
+			sourceTree = "<group>";
+		};
+		FB405BC72AB2D4F4008652CC /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				FBCEDA542B0DF7500008E100 /* YLResetPwdVC.h */,
+				FBCEDA552B0DF7500008E100 /* YLResetPwdVC.m */,
+				FBCEDA562B0DF7500008E100 /* YLResetPwdVC.xib */,
+				FB405BEA2AB2F3B4008652CC /* YLLoginVC.h */,
+				FB405BE82AB2F3B4008652CC /* YLLoginVC.m */,
+				FB405BE92AB2F3B4008652CC /* YLLoginVC.xib */,
+				FBA617122ACBB790002ACDAE /* YLRegidterVC.h */,
+				FBA617132ACBB790002ACDAE /* YLRegidterVC.m */,
+				FBA617142ACBB790002ACDAE /* YLRegidterVC.xib */,
+				FBE449F12ACF0A5200BF379D /* YLprotocolV.xib */,
+				FBE449F62ACF4C7400BF379D /* YLprotocolV.h */,
+				FBE449F72ACF4C7400BF379D /* YLprotocolV.m */,
+				FB6593EE2AE422EA0039EF0A /* YLCountryBean.h */,
+				FB6593EF2AE422EA0039EF0A /* YLCountryBean.m */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		FB405BCD2AB2D58D008652CC /* Net */ = {
+			isa = PBXGroup;
+			children = (
+				FB405BDB2AB2DAC1008652CC /* YLHTTPResult.h */,
+				FB405BDA2AB2DAC1008652CC /* YLHTTPResult.m */,
+				FB405BDC2AB2DAC1008652CC /* YLHTTPUtility.h */,
+				FB405BD92AB2DAC1008652CC /* YLHTTPUtility.m */,
+			);
+			path = Net;
+			sourceTree = "<group>";
+		};
+		FB405BF32AB2F49D008652CC /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				FB6108552AD7C65B0050868E /* LanguageUtility */,
+				FBA617212ACDA5D3002ACDAE /* RCDUploadAPI.h */,
+				FBA617202ACDA5D3002ACDAE /* RCDUploadAPI.m */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		FB405BF72AB2F944008652CC /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				FB405BF82AB2F944008652CC /* YLBaseVC.m */,
+				FB405BF92AB2F944008652CC /* YLBaseVC.h */,
+				FB0B226B2B31C8F0009F303D /* YLWebVC.h */,
+				FB0B226C2B31C8F0009F303D /* YLWebVC.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		FB405BFB2AB30041008652CC /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				FB405BFC2AB30065008652CC /* YLHomeVC.h */,
+				FB405BFD2AB30065008652CC /* YLHomeVC.m */,
+				FB405BFE2AB30065008652CC /* YLHomeVC.xib */,
+				FBA6171A2ACC14A1002ACDAE /* YLBannerBean.h */,
+				FBA6171B2ACC14A1002ACDAE /* YLBannerBean.m */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		FB405C012AB30ED7008652CC /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				FBF50D4B2B2837BC00219359 /* YLModifyNameV.h */,
+				FBF50D4C2B2837BC00219359 /* YLModifyNameV.m */,
+				FBF50D4A2B2837BC00219359 /* YLModifyNameV.xib */,
+				FB405C022AB30F07008652CC /* YLMineVC.h */,
+				FB405C032AB30F07008652CC /* YLMineVC.m */,
+				FB405C042AB30F07008652CC /* YLMineVC.xib */,
+				FBDAF7F42ADC40F8005B0AC6 /* YLServiceBean.h */,
+				FBDAF7F52ADC40F8005B0AC6 /* YLServiceBean.m */,
+			);
+			path = Mine;
+			sourceTree = "<group>";
+		};
+		FB6108552AD7C65B0050868E /* LanguageUtility */ = {
+			isa = PBXGroup;
+			children = (
+				FB6108562AD7C65B0050868E /* RCDLanguageManager.h */,
+				FB6108572AD7C65B0050868E /* RCDLanguageManager.m */,
+			);
+			path = LanguageUtility;
+			sourceTree = "<group>";
+		};
+		FB6431B72AB2D06C00F9DE2C /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				FBFD20292C69D7F600EED696 /* Travel */,
+				FBAA67D82B3D0F690065C198 /* Setting */,
+				FBCDE2512ACEEAA300642DB6 /* Evalua */,
+				FB09D0BD2AB5935C0049A8C8 /* Order */,
+				FB09D0B12AB467700049A8C8 /* Wallet */,
+				FB09D0A82AB466350049A8C8 /* AboutUS */,
+				FB09D0A22AB465860049A8C8 /* Feedback */,
+				FB09D09B2AB461FA0049A8C8 /* Merchant */,
+				FB09D0952AB442C90049A8C8 /* Car */,
+				FB405C012AB30ED7008652CC /* Mine */,
+				FB405BFB2AB30041008652CC /* Home */,
+				FB405BEE2AB2F3D3008652CC /* RCDMainTabBarViewController.h */,
+				FB405BED2AB2F3D3008652CC /* RCDMainTabBarViewController.m */,
+				FB405BF02AB2F3D3008652CC /* RCDNavigationViewController.h */,
+				FB405BEF2AB2F3D3008652CC /* RCDNavigationViewController.m */,
+				FB405BC72AB2D4F4008652CC /* Login */,
+				FB2EBC842C60D5620059B300 /* Question */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		FB9126932AAF6DD00089E6D7 = {
+			isa = PBXGroup;
+			children = (
+				FB91269E2AAF6DD00089E6D7 /* luckrental */,
+				FB91269D2AAF6DD00089E6D7 /* Products */,
+				0E6E90557016018FBE5ECCA5 /* Pods */,
+				AA45845BE45270EBCA46BB54 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FB91269D2AAF6DD00089E6D7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FB91269C2AAF6DD00089E6D7 /* luckrental.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FB91269E2AAF6DD00089E6D7 /* luckrental */ = {
+			isa = PBXGroup;
+			children = (
+				FBA6170A2AC40E80002ACDAE /* Categories */,
+				FB405BF72AB2F944008652CC /* Base */,
+				FB405BF32AB2F49D008652CC /* Utils */,
+				FB405BCD2AB2D58D008652CC /* Net */,
+				FB6431B72AB2D06C00F9DE2C /* UI */,
+				FB6431B62AB2BB3000F9DE2C /* luckrental.entitlements */,
+				FB91269F2AAF6DD00089E6D7 /* AppDelegate.h */,
+				FB9126A02AAF6DD00089E6D7 /* AppDelegate.m */,
+				FB9126A22AAF6DD00089E6D7 /* SceneDelegate.h */,
+				FB9126A32AAF6DD00089E6D7 /* SceneDelegate.m */,
+				FB405BE62AB2DB87008652CC /* RCDCommonDefine.h */,
+				FB405BE72AB2DC2D008652CC /* RCDCommonString.h */,
+				FB9126A52AAF6DD00089E6D7 /* ViewController.h */,
+				FB9126A62AAF6DD00089E6D7 /* ViewController.m */,
+				FB9126A82AAF6DD00089E6D7 /* Main.storyboard */,
+				FB9126AB2AAF6DD10089E6D7 /* Assets.xcassets */,
+				FB9126AD2AAF6DD10089E6D7 /* LaunchScreen.storyboard */,
+				FB9126B02AAF6DD10089E6D7 /* Info.plist */,
+				FB9126B12AAF6DD10089E6D7 /* main.m */,
+				FB6108662AD7D1470050868E /* Localizable.strings */,
+			);
+			path = luckrental;
+			sourceTree = "<group>";
+		};
+		FBA617022AC2E742002ACDAE /* Pay */ = {
+			isa = PBXGroup;
+			children = (
+				FBF50D3A2B26B21500219359 /* YLPayRateV.h */,
+				FBF50D392B26B21500219359 /* YLPayRateV.m */,
+				FBF50D3B2B26B21500219359 /* YLPayRateV.xib */,
+				FBA617032AC2EA02002ACDAE /* YLPayUploadV.h */,
+				FBA617042AC2EA02002ACDAE /* YLPayUploadV.m */,
+				FBA617062AC3FCB5002ACDAE /* YLPayUploadV.xib */,
+				FBF50D3E2B26B6F900219359 /* YLPayRateBean.h */,
+				FBF50D3F2B26B6F900219359 /* YLPayRateBean.m */,
+			);
+			path = Pay;
+			sourceTree = "<group>";
+		};
+		FBA6170A2AC40E80002ACDAE /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				FBA6170F2AC41474002ACDAE /* UIView+Additions.h */,
+				FBA6170E2AC41474002ACDAE /* UIView+Additions.m */,
+				FBA6170C2AC40EB5002ACDAE /* UIView+Nib.h */,
+				FBA6170B2AC40EB5002ACDAE /* UIView+Nib.m */,
+				FB7DC95D2ADE8B82002937C8 /* NSBundle+language.h */,
+				FB7DC95E2ADE8B82002937C8 /* NSBundle+language.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		FBAA67D82B3D0F690065C198 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				FBAA67D92B3D0FBF0065C198 /* YLSettingVC.h */,
+				FBAA67DA2B3D0FBF0065C198 /* YLSettingVC.m */,
+				FBAA67DB2B3D0FBF0065C198 /* YLSettingVC.xib */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		FBCDE2512ACEEAA300642DB6 /* Evalua */ = {
+			isa = PBXGroup;
+			children = (
+				FB2EA7792C70F5D3008C40AC /* YLEvaluaCell2.h */,
+				FB2EA77A2C70F5D3008C40AC /* YLEvaluaCell2.m */,
+				FB2EA77B2C70F5D3008C40AC /* YLEvaluaCell2.xib */,
+				FBE449E22ACEEC8300BF379D /* YLSatisfactionCell.h */,
+				FBE449E32ACEEC8300BF379D /* YLSatisfactionCell.m */,
+				FBE449E42ACEEC8300BF379D /* YLSatisfactionCell.xib */,
+				FBE449E72ACEECDC00BF379D /* YLImpressionCell.h */,
+				FBE449E82ACEECDC00BF379D /* YLImpressionCell.m */,
+				FBE449E92ACEECDC00BF379D /* YLImpressionCell.xib */,
+				FBE449EC2ACEECFB00BF379D /* YLScoreCell.h */,
+				FBE449ED2ACEECFB00BF379D /* YLScoreCell.m */,
+				FBE449EE2ACEECFB00BF379D /* YLScoreCell.xib */,
+				FBCD43B32AD0118800AC3C1C /* YLSatisfactionBean.h */,
+				FBCD43B42AD0118800AC3C1C /* YLSatisfactionBean.m */,
+				FBCD43B62AD0119800AC3C1C /* YLImpressionBean.h */,
+				FBCD43B72AD0119800AC3C1C /* YLImpressionBean.m */,
+				FBCD43B92AD011AB00AC3C1C /* YLScoreBean.h */,
+				FBCD43BA2AD011AB00AC3C1C /* YLScoreBean.m */,
+				FBCD43BC2AD0133000AC3C1C /* YLOptionBean.h */,
+				FBCD43BD2AD0133000AC3C1C /* YLOptionBean.m */,
+				FBF50D412B26FEA000219359 /* YLEvaluaCell.h */,
+				FBF50D422B26FEA000219359 /* YLEvaluaCell.m */,
+				FBF50D432B26FEA000219359 /* YLEvaluaCell.xib */,
+				FBF50D462B2707CB00219359 /* YLCommentBean.h */,
+				FBF50D472B2707CB00219359 /* YLCommentBean.m */,
+			);
+			path = Evalua;
+			sourceTree = "<group>";
+		};
+		FBFD20292C69D7F600EED696 /* Travel */ = {
+			isa = PBXGroup;
+			children = (
+				FBFD202A2C69D81200EED696 /* YLTravelListVC.h */,
+				FBFD202B2C69D81200EED696 /* YLTravelListVC.m */,
+				FBFD202C2C69D81200EED696 /* YLTravelListVC.xib */,
+				FBFD20302C69EF2F00EED696 /* YLTravelInfoVC.h */,
+				FBFD20312C69EF2F00EED696 /* YLTravelInfoVC.m */,
+				FBFD20322C69EF2F00EED696 /* YLTravelInfoVC.xib */,
+				FBFD20352C69EF5F00EED696 /* YLTravelTypeBean.h */,
+				FBFD20362C69EF5F00EED696 /* YLTravelTypeBean.m */,
+				FBFD20382C69EF8900EED696 /* YLTravelBean.h */,
+				FBFD20392C69EF8900EED696 /* YLTravelBean.m */,
+				FBFD203B2C69EF9A00EED696 /* YLTravelInfoBean.h */,
+				FBFD203C2C69EF9A00EED696 /* YLTravelInfoBean.m */,
+				FBFD20432C69F4FF00EED696 /* YLTravelListCell.h */,
+				FBFD20442C69F4FF00EED696 /* YLTravelListCell.m */,
+				FBFD20452C69F4FF00EED696 /* YLTravelListCell.xib */,
+				FBFD20482C6C8D4200EED696 /* YLCommentV.h */,
+				FBFD20492C6C8D4200EED696 /* YLCommentV.m */,
+				FBFD204B2C6C8E0F00EED696 /* YLCommentV.xib */,
+			);
+			path = Travel;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FB91269B2AAF6DD00089E6D7 /* luckrental */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB9126B52AAF6DD10089E6D7 /* Build configuration list for PBXNativeTarget "luckrental" */;
+			buildPhases = (
+				BD95F9BAC0274821B4D74529 /* [CP] Check Pods Manifest.lock */,
+				FB9126982AAF6DD00089E6D7 /* Sources */,
+				FB9126992AAF6DD00089E6D7 /* Frameworks */,
+				FB91269A2AAF6DD00089E6D7 /* Resources */,
+				F92E21D04ECDA97D536200F5 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = luckrental;
+			productName = luckrental;
+			productReference = FB91269C2AAF6DD00089E6D7 /* luckrental.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FB9126942AAF6DD00089E6D7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					FB91269B2AAF6DD00089E6D7 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+				};
+			};
+			buildConfigurationList = FB9126972AAF6DD00089E6D7 /* Build configuration list for PBXProject "luckrental" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = ja;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				ja,
+				ko,
+				en,
+				"zh-Hant",
+			);
+			mainGroup = FB9126932AAF6DD00089E6D7;
+			productRefGroup = FB91269D2AAF6DD00089E6D7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FB91269B2AAF6DD00089E6D7 /* luckrental */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FB91269A2AAF6DD00089E6D7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB265F282C64CE25006FF1E2 /* YLQuestionListCell.xib in Resources */,
+				FBFD204C2C6C8E0F00EED696 /* YLCommentV.xib in Resources */,
+				FB09D0DF2AB8434B0049A8C8 /* YLCarInfoVC.xib in Resources */,
+				FBE449FE2ACFE03900BF379D /* YLMerchantListVC.xib in Resources */,
+				FBCDE2502ACEB8D300642DB6 /* YLOrderInfoVC.xib in Resources */,
+				FB09D0CD2AB594130049A8C8 /* YLHistoryOrderCell.xib in Resources */,
+				FBCDE24B2ACEB8B600642DB6 /* YLEvaluateVC.xib in Resources */,
+				FB405C062AB30F07008652CC /* YLMineVC.xib in Resources */,
+				FBF50D3D2B26B21500219359 /* YLPayRateV.xib in Resources */,
+				FB09D0B02AB466D10049A8C8 /* YLAboutUSVC.xib in Resources */,
+				FBF50D4D2B2837BC00219359 /* YLModifyNameV.xib in Resources */,
+				FBFD202D2C69D81200EED696 /* YLTravelListVC.xib in Resources */,
+				FB497CF92BA892DD003630DB /* YLPartnersCell.xib in Resources */,
+				FB405C002AB30065008652CC /* YLHomeVC.xib in Resources */,
+				FB09D0DA2AB83D7C0049A8C8 /* YLCarListVC.xib in Resources */,
+				FB2EA77C2C70F5D3008C40AC /* YLEvaluaCell2.xib in Resources */,
+				FBE449F22ACF0A5200BF379D /* YLprotocolV.xib in Resources */,
+				FBAA67DD2B3D0FBF0065C198 /* YLSettingVC.xib in Resources */,
+				FBCDE23F2ACE556100642DB6 /* YLRechargeCell.xib in Resources */,
+				FBA617012AC2CE52002ACDAE /* YLPayOrder.xib in Resources */,
+				FBFD20262C69A40600EED696 /* YLQuestionInfoVC.xib in Resources */,
+				FB09D0A12AB463AB0049A8C8 /* YLMerchantCell.xib in Resources */,
+				FBCEDA582B0DF7500008E100 /* YLResetPwdVC.xib in Resources */,
+				FB9126AF2AAF6DD10089E6D7 /* LaunchScreen.storyboard in Resources */,
+				FBCD43C42AD04FA500AC3C1C /* YLMerchantVC.xib in Resources */,
+				FBE449E62ACEEC8300BF379D /* YLSatisfactionCell.xib in Resources */,
+				FB6108642AD7D1470050868E /* Localizable.strings in Resources */,
+				FBE449F02ACEECFB00BF379D /* YLScoreCell.xib in Resources */,
+				FBE449EB2ACEECDC00BF379D /* YLImpressionCell.xib in Resources */,
+				FB265F2D2C64CFE3006FF1E2 /* YLQuestionCell.xib in Resources */,
+				FBA616FC2AC1DAD7002ACDAE /* YLSummitOrderVC.xib in Resources */,
+				FB09D0A72AB465B80049A8C8 /* YLFeedbackVC.xib in Resources */,
+				FB405BEC2AB2F3B4008652CC /* YLLoginVC.xib in Resources */,
+				FB9126AC2AAF6DD10089E6D7 /* Assets.xcassets in Resources */,
+				FB2B01562C60D93400C34693 /* YLQuestionListVc.xib in Resources */,
+				FBA617162ACBB790002ACDAE /* YLRegidterVC.xib in Resources */,
+				FB09D0BC2AB575150049A8C8 /* YLRechargeVC.xib in Resources */,
+				FBFD20332C69EF2F00EED696 /* YLTravelInfoVC.xib in Resources */,
+				FB09D0B62AB467900049A8C8 /* YLWalletVC.xib in Resources */,
+				FB09D09A2AB443050049A8C8 /* YLCarListCell.xib in Resources */,
+				FB09D0C82AB593F50049A8C8 /* YLCurOrderCell.xib in Resources */,
+				FBFD20462C69F4FF00EED696 /* YLTravelListCell.xib in Resources */,
+				FBF50D452B26FEA000219359 /* YLEvaluaCell.xib in Resources */,
+				FB9126AA2AAF6DD00089E6D7 /* Main.storyboard in Resources */,
+				FBF50D382B22C21D00219359 /* YLCarFuncCell.xib in Resources */,
+				FBA617072AC3FCB5002ACDAE /* YLPayUploadV.xib in Resources */,
+				FBCD43C92AD06BD900AC3C1C /* YLBalanceCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		BD95F9BAC0274821B4D74529 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-luckrental-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F92E21D04ECDA97D536200F5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-luckrental/Pods-luckrental-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-luckrental/Pods-luckrental-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-luckrental/Pods-luckrental-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FB9126982AAF6DD00089E6D7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB09D0D12AB8317A0049A8C8 /* YLCarBean.m in Sources */,
+				FBE449EA2ACEECDC00BF379D /* YLImpressionCell.m in Sources */,
+				FBFD203A2C69EF8900EED696 /* YLTravelBean.m in Sources */,
+				FBE449F82ACF4C7400BF379D /* YLprotocolV.m in Sources */,
+				FB405BFF2AB30065008652CC /* YLHomeVC.m in Sources */,
+				FB405BF22AB2F3D3008652CC /* RCDNavigationViewController.m in Sources */,
+				FB09D0A02AB463AB0049A8C8 /* YLMerchantCell.m in Sources */,
+				FB2B01552C60D93400C34693 /* YLQuestionListVc.m in Sources */,
+				FBA6170D2AC40EB5002ACDAE /* UIView+Nib.m in Sources */,
+				FB265F302C690F24006FF1E2 /* YLQuestionBean.m in Sources */,
+				FB405BF12AB2F3D3008652CC /* RCDMainTabBarViewController.m in Sources */,
+				FBCD43BB2AD011AB00AC3C1C /* YLScoreBean.m in Sources */,
+				FBCDE24A2ACEB8B600642DB6 /* YLEvaluateVC.m in Sources */,
+				FB7DC95F2ADE8B82002937C8 /* NSBundle+language.m in Sources */,
+				FBE449EF2ACEECFB00BF379D /* YLScoreCell.m in Sources */,
+				FBA617052AC2EA02002ACDAE /* YLPayUploadV.m in Sources */,
+				FBFD20472C69F4FF00EED696 /* YLTravelListCell.m in Sources */,
+				FB09D0C02AB5938C0049A8C8 /* YLCurOrderVC.m in Sources */,
+				FBA617002AC2CE52002ACDAE /* YLPayOrder.m in Sources */,
+				FBCDE24F2ACEB8D300642DB6 /* YLOrderInfoVC.m in Sources */,
+				FB405BDD2AB2DAC1008652CC /* YLHTTPUtility.m in Sources */,
+				FBFD203D2C69EF9A00EED696 /* YLTravelInfoBean.m in Sources */,
+				FB0B226D2B31C8F0009F303D /* YLWebVC.m in Sources */,
+				FBCD43B82AD0119800AC3C1C /* YLImpressionBean.m in Sources */,
+				FBCD43BE2AD0133000AC3C1C /* YLOptionBean.m in Sources */,
+				FB405C052AB30F07008652CC /* YLMineVC.m in Sources */,
+				FBA617152ACBB790002ACDAE /* YLRegidterVC.m in Sources */,
+				FBDAF7F62ADC40F8005B0AC6 /* YLServiceBean.m in Sources */,
+				FBF50D3C2B26B21500219359 /* YLPayRateV.m in Sources */,
+				FB09D0B52AB467900049A8C8 /* YLWalletVC.m in Sources */,
+				FB497CFC2BA898CC003630DB /* YLPartnersBean.m in Sources */,
+				FBF50D482B2707CB00219359 /* YLCommentBean.m in Sources */,
+				FBCDE2462ACE979300642DB6 /* YLOrderBean.m in Sources */,
+				FB09D0C72AB593F50049A8C8 /* YLCurOrderCell.m in Sources */,
+				FB265F2C2C64CFE3006FF1E2 /* YLQuestionCell.m in Sources */,
+				FBAA67DC2B3D0FBF0065C198 /* YLSettingVC.m in Sources */,
+				FB09D0DE2AB8434B0049A8C8 /* YLCarInfoVC.m in Sources */,
+				FBE449FD2ACFE03900BF379D /* YLMerchantListVC.m in Sources */,
+				FB265F272C64CE25006FF1E2 /* YLQuestionListCell.m in Sources */,
+				FB2EA77D2C70F5D3008C40AC /* YLEvaluaCell2.m in Sources */,
+				FBF50D4E2B2837BC00219359 /* YLModifyNameV.m in Sources */,
+				FBFD20372C69EF5F00EED696 /* YLTravelTypeBean.m in Sources */,
+				FB09D0992AB443050049A8C8 /* YLCarListCell.m in Sources */,
+				FBCD43CC2AD06CB500AC3C1C /* YLBalanceBean.m in Sources */,
+				FBF50D512B28691900219359 /* YLAreaCodeBean.m in Sources */,
+				FBF50D372B22C21D00219359 /* YLCarFuncCell.m in Sources */,
+				FB9126A72AAF6DD00089E6D7 /* ViewController.m in Sources */,
+				FBCDE23E2ACE556100642DB6 /* YLRechargeCell.m in Sources */,
+				FB14E1AF2B0BAF7800A746F2 /* YLLocationBean.m in Sources */,
+				FB6108582AD7C65B0050868E /* RCDLanguageManager.m in Sources */,
+				FB9126A12AAF6DD00089E6D7 /* AppDelegate.m in Sources */,
+				FBF50D442B26FEA000219359 /* YLEvaluaCell.m in Sources */,
+				FB09D0BB2AB575150049A8C8 /* YLRechargeVC.m in Sources */,
+				FBFD202E2C69D81200EED696 /* YLTravelListVC.m in Sources */,
+				FBCD43B52AD0118800AC3C1C /* YLSatisfactionBean.m in Sources */,
+				FBFD204A2C6C8D4200EED696 /* YLCommentV.m in Sources */,
+				FB8ECC8F2C60E01C00600A8C /* YLQuestionListBean.m in Sources */,
+				FBFD20342C69EF2F00EED696 /* YLTravelInfoVC.m in Sources */,
+				FB09D0D52AB83B150049A8C8 /* YLMerchantBean.m in Sources */,
+				FBFD20252C69A40600EED696 /* YLQuestionInfoVC.m in Sources */,
+				FBCD43C32AD04FA500AC3C1C /* YLMerchantVC.m in Sources */,
+				FBA617102AC41474002ACDAE /* UIView+Additions.m in Sources */,
+				FB9126B22AAF6DD10089E6D7 /* main.m in Sources */,
+				FBCEDA572B0DF7500008E100 /* YLResetPwdVC.m in Sources */,
+				FB1914AE2B01F4CF006F60BB /* YLPayInfoBean.m in Sources */,
+				FBCD43C82AD06BD900AC3C1C /* YLBalanceCell.m in Sources */,
+				FBA6171C2ACC14A1002ACDAE /* YLBannerBean.m in Sources */,
+				FB09D0C32AB593BE0049A8C8 /* YLHistoryOrderVC.m in Sources */,
+				FB405BEB2AB2F3B4008652CC /* YLLoginVC.m in Sources */,
+				FB09D0CC2AB594130049A8C8 /* YLHistoryOrderCell.m in Sources */,
+				FBE449E52ACEEC8300BF379D /* YLSatisfactionCell.m in Sources */,
+				FB09D0D92AB83D7C0049A8C8 /* YLCarListVC.m in Sources */,
+				FB497CF82BA892DD003630DB /* YLPartnersCell.m in Sources */,
+				FBA617222ACDA5D3002ACDAE /* RCDUploadAPI.m in Sources */,
+				FB23C5972AD0BCCD00E51DB9 /* YLServicesBean.m in Sources */,
+				FB09D0A62AB465B80049A8C8 /* YLFeedbackVC.m in Sources */,
+				FB405BDE2AB2DAC1008652CC /* YLHTTPResult.m in Sources */,
+				FBF50D402B26B6F900219359 /* YLPayRateBean.m in Sources */,
+				FB405BFA2AB2F944008652CC /* YLBaseVC.m in Sources */,
+				FBA616FB2AC1DAD7002ACDAE /* YLSummitOrderVC.m in Sources */,
+				FBCDE2422ACE5FFD00642DB6 /* YLRechargeBean.m in Sources */,
+				FB6593F02AE422EA0039EF0A /* YLCountryBean.m in Sources */,
+				FB9126A42AAF6DD00089E6D7 /* SceneDelegate.m in Sources */,
+				FB09D0AF2AB466D10049A8C8 /* YLAboutUSVC.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FB6108662AD7D1470050868E /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FB6108652AD7D1470050868E /* ja */,
+				FB6108692AD7D5DE0050868E /* ko */,
+				FBDAF7D22AD7F4CB005B0AC6 /* en */,
+				FBDAF7D52AD7FD41005B0AC6 /* zh-Hant */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		FB9126A82AAF6DD00089E6D7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FB9126A92AAF6DD00089E6D7 /* Base */,
+				FB6108672AD7D59D0050868E /* ko */,
+				FBDAF7D02AD7F4AB005B0AC6 /* en */,
+				FBDAF7D32AD7FD1C005B0AC6 /* zh-Hant */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FB9126AD2AAF6DD10089E6D7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FB9126AE2AAF6DD10089E6D7 /* Base */,
+				FB6108682AD7D5B20050868E /* ko */,
+				FBDAF7D12AD7F4BB005B0AC6 /* en */,
+				FBDAF7D42AD7FD2F005B0AC6 /* zh-Hant */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FB9126B32AAF6DD10089E6D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		FB9126B42AAF6DD10089E6D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FB9126B62AAF6DD10089E6D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE5560B8ECE737D2FA2881D3 /* Pods-luckrental.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = luckrental/luckrental.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 23;
+				DEVELOPMENT_TEAM = P4G5G8W83R;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = luckrental/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = LuckRentalCar;
+				INFOPLIST_KEY_NSCameraUsageDescription = "请允许访问您的相机，这样才能使用该功能!";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "请允许使用您的位置，这样可以发送地理位置信息给好友！";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "请允许使用您的位置，这样可以发送地理位置信息给好友！";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "请允许使用您的位置，这样可以发送地理位置信息给好友！";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "请允许访问您的相册，这样才能使用该功能!";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "请允许访问您的相册，这样才能使用该功能!";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cli.luckrental;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		FB9126B72AAF6DD10089E6D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 443115FAEE6E7250A2E231AE /* Pods-luckrental.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = luckrental/luckrental.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 23;
+				DEVELOPMENT_TEAM = P4G5G8W83R;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = luckrental/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = LuckRentalCar;
+				INFOPLIST_KEY_NSCameraUsageDescription = "请允许访问您的相机，这样才能使用该功能!";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "请允许使用您的位置，这样可以发送地理位置信息给好友！";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "请允许使用您的位置，这样可以发送地理位置信息给好友！";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "请允许使用您的位置，这样可以发送地理位置信息给好友！";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "请允许访问您的相册，这样才能使用该功能!";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "请允许访问您的相册，这样才能使用该功能!";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cli.luckrental;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FB9126972AAF6DD00089E6D7 /* Build configuration list for PBXProject "luckrental" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB9126B32AAF6DD10089E6D7 /* Debug */,
+				FB9126B42AAF6DD10089E6D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FB9126B52AAF6DD10089E6D7 /* Build configuration list for PBXNativeTarget "luckrental" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB9126B62AAF6DD10089E6D7 /* Debug */,
+				FB9126B72AAF6DD10089E6D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FB9126942AAF6DD00089E6D7 /* Project object */;
+}

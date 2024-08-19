@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23077.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23068.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="YLQuestionListCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="boE-B8-vHF">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pyy-Ew-tZL">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="30"/>
+                                <color key="backgroundColor" red="0.99607843139999996" green="0.68235294120000001" blue="0.2274509804" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="U15-TV-KlW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Zci-80-ZxD">
+                                <rect key="frame" x="0.0" y="30" width="320" height="70"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Zci-80-ZxD" secondAttribute="trailing" id="Gpd-6c-pUd"/>
+                            <constraint firstItem="Zci-80-ZxD" firstAttribute="leading" secondItem="boE-B8-vHF" secondAttribute="leading" id="J2L-DT-qqJ"/>
+                            <constraint firstItem="pyy-Ew-tZL" firstAttribute="leading" secondItem="boE-B8-vHF" secondAttribute="leading" id="Lmh-rA-CIP"/>
+                            <constraint firstItem="Zci-80-ZxD" firstAttribute="top" secondItem="pyy-Ew-tZL" secondAttribute="bottom" id="RfK-18-r9D"/>
+                            <constraint firstAttribute="trailing" secondItem="pyy-Ew-tZL" secondAttribute="trailing" id="XZc-VC-Rhk"/>
+                            <constraint firstAttribute="bottom" secondItem="Zci-80-ZxD" secondAttribute="bottom" id="eZG-qR-2St"/>
+                            <constraint firstItem="pyy-Ew-tZL" firstAttribute="top" secondItem="boE-B8-vHF" secondAttribute="top" id="qkz-My-V2D"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="boE-B8-vHF" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="DhY-5u-VrV"/>
+                    <constraint firstItem="boE-B8-vHF" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="FKa-Wq-Ad1"/>
+                    <constraint firstAttribute="trailing" secondItem="boE-B8-vHF" secondAttribute="trailing" id="SdC-uY-uFg"/>
+                    <constraint firstAttribute="bottom" secondItem="boE-B8-vHF" secondAttribute="bottom" id="pEc-rO-raY"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="contentV" destination="boE-B8-vHF" id="LbI-s2-ZS2"/>
+                <outlet property="tabV" destination="Zci-80-ZxD" id="rbj-9a-9rO"/>
+                <outlet property="titleLabel" destination="pyy-Ew-tZL" id="MS3-2m-blS"/>
+            </connections>
+            <point key="canvasLocation" x="138.93129770992365" y="19.718309859154932"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
