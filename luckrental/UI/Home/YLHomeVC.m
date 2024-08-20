@@ -78,6 +78,7 @@
     _carTabV.dataSource = self;
     _carTabV.separatorStyle = UITableViewCellSeparatorStyleNone;
     _carTabV.showsVerticalScrollIndicator = NO;
+    _carTabV.scrollEnabled = NO;
     _carTabV.tag = 111;
     
     [_merchantTabv registerNib:[UINib nibWithNibName:@"YLMerchantCell" bundle:nil] forCellReuseIdentifier:@"YLMerchantCell"];
@@ -85,6 +86,7 @@
     _merchantTabv.dataSource = self;
     _merchantTabv.separatorStyle = UITableViewCellSeparatorStyleNone;
     _merchantTabv.showsVerticalScrollIndicator = NO;
+    _merchantTabv.scrollEnabled = NO;
     _merchantTabv.tag = 222;
     
     self.moreCarLb.userInteractionEnabled = YES;
@@ -147,6 +149,17 @@
 //        [self.carArray addObject:self.carArray[0]];
 //        [self.carArray addObject:self.carArray[0]];
 //        [self.carArray addObject:self.carArray[0]];
+        if(self.carArray.count >=3 && self.merchantArray.count >=3){
+            [self.contentV mas_remakeConstraints:^(MASConstraintMaker *make) {
+                make.top.left.right.bottom.equalTo(self.scrollV);
+                make.height.mas_equalTo(930);
+            }];
+        }else{
+            [self.contentV mas_remakeConstraints:^(MASConstraintMaker *make) {
+                make.top.left.right.bottom.equalTo(self.scrollV);
+                make.height.mas_equalTo(180+self.carArray.count*125+self.merchantArray.count*125);
+            }];
+        }
         if(self.carArray.count <3){
             [self.carTabV mas_remakeConstraints:^(MASConstraintMaker *make) {
                 make.top.equalTo(self.hotCarLb.mas_bottom).offset(16);
@@ -162,26 +175,28 @@
                 make.height.mas_equalTo(375);
             }];
         }
-        if(self.carArray.count >=3 && self.merchantArray.count >=3){
-            [self.contentV mas_remakeConstraints:^(MASConstraintMaker *make) {
-                make.top.left.right.bottom.equalTo(self.scrollV);
-                make.height.mas_equalTo(850);
-            }];
-        }else{
-            [self.contentV mas_remakeConstraints:^(MASConstraintMaker *make) {
-                make.top.left.right.bottom.equalTo(self.scrollV);
-                make.height.mas_equalTo(100+self.carArray.count*125+self.merchantArray.count*125);
-            }];
-        }
         [self.carTabV reloadData];
     }];
 
     [YLHTTPUtility requestWithHTTPMethod:HTTPMethodGet URLString:@"/api/merchant/getHotMerchantList" parameters:nil complete:^(id ob) {
         self.merchantArray = [YLMerchantBean mj_objectArrayWithKeyValuesArray:ob];
-//test
-//        [self.merchantArray addObject:self.merchantArray[0]];
-//        [self.merchantArray addObject:self.merchantArray[0]];
-//        [self.merchantArray addObject:self.merchantArray[0]];
+        //test
+        [self.merchantArray addObject:self.merchantArray[0]];
+        [self.merchantArray addObject:self.merchantArray[0]];
+        [self.merchantArray addObject:self.merchantArray[0]];
+        
+        if(self.carArray.count >=3 && self.merchantArray.count >=3){
+            [self.contentV mas_remakeConstraints:^(MASConstraintMaker *make) {
+                make.top.left.right.bottom.equalTo(self.scrollV);
+                make.height.mas_equalTo(930);
+            }];
+        }else{
+            [self.contentV mas_remakeConstraints:^(MASConstraintMaker *make) {
+                make.top.left.right.bottom.equalTo(self.scrollV);
+                make.height.mas_equalTo(180+self.carArray.count*125+self.merchantArray.count*125);
+            }];
+        }
+        
         if(self.merchantArray.count <3){
             [self.merchantTabv mas_remakeConstraints:^(MASConstraintMaker *make) {
                 make.top.equalTo(self.hotMerchantLb.mas_bottom).offset(16);
@@ -197,21 +212,11 @@
                 make.height.mas_equalTo(375);
             }];
         }
-        if(self.carArray.count >=3 && self.merchantArray.count >=3){
-            [self.contentV mas_remakeConstraints:^(MASConstraintMaker *make) {
-                make.top.left.right.bottom.equalTo(self.scrollV);
-                make.height.mas_equalTo(850);
-            }];
-        }else{
-            [self.contentV mas_remakeConstraints:^(MASConstraintMaker *make) {
-                make.top.left.right.bottom.equalTo(self.scrollV);
-                make.height.mas_equalTo(100+self.carArray.count*125+self.merchantArray.count*125);
-            }];
-        }
+
         [self.merchantTabv reloadData];
     }];
     
-    [YLHTTPUtility requestWithHTTPMethod:HTTPMethodGet URLString:@"//api/slideshow/getRecommend" parameters:nil complete:^(id ob) {
+    [YLHTTPUtility requestWithHTTPMethod:HTTPMethodGet URLString:@"/api/slideshow/getRecommend" parameters:nil complete:^(id ob) {
         self.bArray = [YLBannerBean mj_objectArrayWithKeyValuesArray:ob];
         NSMutableArray *imgArray = [NSMutableArray new];
         for (YLBannerBean *bean in self.bArray) {

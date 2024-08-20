@@ -29,6 +29,7 @@
                 <outlet property="moreFunctionLb" destination="IBL-e8-mqL" id="Ag4-G2-G1I"/>
                 <outlet property="nameLb" destination="4Le-Uk-MEM" id="TTM-lG-J9G"/>
                 <outlet property="pointLb" destination="FAy-kh-gOX" id="aa5-tr-Sn8"/>
+                <outlet property="questionLb" destination="hPf-cI-p70" id="Sl8-ds-fzS"/>
                 <outlet property="questionV" destination="D2J-c2-An7" id="xlm-ep-QHG"/>
                 <outlet property="quitLb" destination="VU6-SX-vaX" id="ytg-qQ-pXk"/>
                 <outlet property="quitV" destination="neA-f9-eCV" id="CAj-RP-c0L"/>

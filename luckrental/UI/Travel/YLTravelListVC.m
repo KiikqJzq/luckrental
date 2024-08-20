@@ -10,10 +10,11 @@
 #import "YLTravelTypeBean.h"
 #import "YLTravelBean.h"
 #import "YLTravelListCell.h"
-@interface YLTravelListVC ()<UICollectionViewDelegate, UICollectionViewDataSource,UITextFieldDelegate>
+@interface YLTravelListVC ()<UICollectionViewDelegate, UICollectionViewDataSource,UITextFieldDelegate,UIScrollViewDelegate>
 @property (nonatomic, strong) NSMutableArray *typeDataArray;
 @property (nonatomic, strong) NSMutableArray *dataArray;
 @property (nonatomic, strong) NSString *typeId;
+
 @end
 
 @implementation YLTravelListVC
@@ -21,7 +22,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.typeId = @"";
-    [self.segCon addTarget:self action:@selector(segmentChanged:) forControlEvents:UIControlEventValueChanged];
 
             
     // 计算每个 cell 的宽度
@@ -41,14 +41,18 @@
     _cv.dataSource = self;
     [_cv registerNib:[UINib nibWithNibName:NSStringFromClass([YLTravelListCell class])bundle:[NSBundle mainBundle]] forCellWithReuseIdentifier:@"YLTravelListCell"];
     
-    [self.segCon setApportionsSegmentWidthsByContent:YES];
-    self.scrollV.showsHorizontalScrollIndicator = NO;
-    
     self.searchLb.userInteractionEnabled = YES;
     [self.searchLb addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(searchClick)]];
-    
+
     self.searchTV.delegate = self;
     [self.searchTV addTarget:self action:@selector(textFieldDidChange:) forControlEvents:UIControlEventEditingChanged];
+    
+
+    [self.segCon addTarget:self action:@selector(segmentChanged:) forControlEvents:UIControlEventValueChanged];
+    [self.segCon setApportionsSegmentWidthsByContent:YES];
+    self.scrollV.showsHorizontalScrollIndicator = NO;
+//    self.scrollV.delegate = self;
+    
 
 }
 
@@ -67,7 +71,9 @@
             NSString *name = typeBean.name;
             [weakSelf.segCon insertSegmentWithTitle:name atIndex:i animated:YES];
         }
-        [weakSelf getHotTravelList];
+        
+        self.segCon.selectedSegmentIndex = 0;
+        [self segmentChanged:self.segCon];
     }];
 }
 
@@ -78,20 +84,33 @@
 
 - (void)segmentChanged:(UISegmentedControl *)sender {
     NSInteger selectedIndex = sender.selectedSegmentIndex;
-    CGFloat segmentWidth = 100.0;
-    CGFloat targetOffsetX = selectedIndex * segmentWidth - (self.view.frame.size.width / 2 - segmentWidth / 2);
+    CGFloat totalWidth = 0;
+    for (NSInteger i = 0; i < selectedIndex; i++) {
+        totalWidth += [self widthOfSegmentAtIndex:i];
+    }
+    
+    CGFloat segmentWidth = [self widthOfSegmentAtIndex:selectedIndex];
+    CGFloat targetOffsetX = totalWidth - (self.view.frame.size.width / 2 - segmentWidth / 2);
     targetOffsetX = MAX(0, MIN(targetOffsetX, self.scrollV.contentSize.width - self.scrollV.frame.size.width));
     [self.scrollV setContentOffset:CGPointMake(targetOffsetX, 0) animated:YES];
     
     YLTravelTypeBean *bean = self.typeDataArray[selectedIndex];
     self.typeId = bean.tId;
-    if(selectedIndex == 0){
+    if (selectedIndex == 0) {
         [self getHotTravelList];
-    }else{
+    } else {
         [self getTravelList];
     }
-    
-    
+}
+
+
+- (CGFloat)widthOfSegmentAtIndex:(NSInteger)index {
+    // 计算指定索引的段宽度
+    NSString *title = [self.segCon titleForSegmentAtIndex:index];
+      UIFont *font = [UIFont systemFontOfSize:14]; // Replace with your desired font size or font
+      NSDictionary *attributes = @{NSFontAttributeName: font};
+      CGSize size = [title sizeWithAttributes:attributes];
+      return size.width + 20; // Adjust the padding as needed
 }
 
 - (void)getHotTravelList{
@@ -169,4 +188,17 @@
     }
 }
 
+//- (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView {
+//    self.segCon.userInteractionEnabled = NO;
+//}
+//
+//- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView {
+//    self.segCon.userInteractionEnabled = YES;
+//}
+//
+//- (void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate {
+//    if (!decelerate) {
+//        self.segCon.userInteractionEnabled = YES;
+//    }
+//}
 @end

@@ -12,7 +12,7 @@
 "login" = "ログイン";
 "home" = "ホーム";
 "search" = "検索";
-"enter_keywords" = "検索キーワードを入力してください";
+"enter_keywords" = "Please Enter Key Words";
 "popular_vehicles" = "人気の車両";
 "more" = "もっと見る";
 "popular_merchants" = "人気の店舗";
@@ -231,8 +231,9 @@
 "social_platform" = "ソーシャルプラットフォーム";
 "reviews_count" = "%d件のレビュー";
 "information" = "情報";
-"faq" = "よくある質問";
+"faq" = "ご質問";
 "reviews" = "レビュー";
 "enter_review" = "レビューを入力してください";
 "highlight" = "ハイライト";
 "popular" = "人気";
+"price_up" = "%@ up";

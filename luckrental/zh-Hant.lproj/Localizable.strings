@@ -12,7 +12,7 @@
 "login" = "登錄";
 "home" = "首頁";
 "search" = "搜索";
-"enter_keywords" = "請輸入搜索關鍵詞";
+"enter_keywords" = "請輸入搜索關鍵字";
 "popular_vehicles" = "熱門車輛";
 "more" = "更多";
 "popular_merchants" = "熱門商戶";
@@ -237,3 +237,4 @@
 "enter_review" = "請輸入評價";
 "highlight" = "星級推介";
 "popular" = "熱門";
+"price_up" = "%@ 起";

@@ -12,7 +12,7 @@
 "login" = "로그인";
 "home" = "홈";
 "search" = "검색";
-"enter_keywords" = "검색어를 입력하세요";
+"enter_keywords" = "Please Enter Key Words";
 "popular_vehicles" = "인기 차량";
 "more" = "더 보기";
 "popular_merchants" = "인기 상인";
@@ -230,8 +230,9 @@
 "social_platform" = "소셜 플랫폼";
 "reviews_count" = "%d개의 리뷰";
 "information" = "정보";
-"faq" = "자주 묻는 질문";
+"faq" = "FAQ";
 "reviews" = "리뷰";
 "enter_review" = "리뷰를 입력하세요";
 "highlight" = "하이라이트";
 "popular" = "인기";
+"price_up" = "%@ up";

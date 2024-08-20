@@ -21,7 +21,7 @@
     
     UICollectionViewFlowLayout *flowLayout2 = [[UICollectionViewFlowLayout alloc] init];
     flowLayout2.itemSize = CGSizeMake(40, 20); // 每个 cell 的大小
-    flowLayout2.minimumInteritemSpacing = 0; // 列间距
+    flowLayout2.minimumInteritemSpacing = 2; // 列间距
     flowLayout2.minimumLineSpacing = 0; // 行间距
     _cv.collectionViewLayout=flowLayout2;
     [_cv setShowsHorizontalScrollIndicator:NO];
@@ -34,11 +34,22 @@
 
 
 
+
 - (void)initWithDate:(YLTravelBean*)bean{
     self.lb.text = bean.title;
     self.titleLb.text = bean.place;
-    self.priceLb.text = bean.price;
-    self.originalPriceLb.text = bean.originalPrice;
+    self.priceLb.text = [NSString stringWithFormat:MyString(@"price_up"),bean.price];
+    
+    NSDictionary *attributes = @{
+        NSStrikethroughStyleAttributeName: [NSNumber numberWithInteger:NSUnderlineStyleSingle],
+    };
+
+    NSAttributedString *attributedText = [[NSAttributedString alloc] initWithString:[NSString stringWithFormat:MyString(@"price_up"),bean.originalPrice] attributes:attributes];
+    self.originalPriceLb.attributedText = attributedText;
+    
+    NSAttributedString *attributedText2 = [[NSAttributedString alloc] initWithString:self.originalPriceTitleLb.text attributes:attributes];
+    self.originalPriceTitleLb.attributedText = attributedText2;
+    
     [self.iv sd_setImageWithURL:[NSURL URLWithString:bean.mobileImg]];
     
     _dataArray = [NSMutableArray new];
@@ -74,7 +85,7 @@
 }
 
 - (CGFloat)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout minimumInteritemSpacingForSectionAtIndex:(NSInteger)section{
-    return 0;
+    return 2;
 }
 
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout referenceSizeForFooterInSection:(NSInteger)section{

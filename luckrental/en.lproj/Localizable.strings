@@ -12,7 +12,7 @@
 "login" = "Log In";
 "home" = "Home";
 "search" = "Search";
-"enter_keywords" = "Enter keywords";
+"enter_keywords" = "Please Enter Key Words";
 "popular_vehicles" = "Popular Vehicles";
 "more" = "More";
 "popular_merchants" = "Popular Merchants";
@@ -235,3 +235,4 @@
 "enter_review" = "Please enter a review";
 "highlight" = "Highlight";
 "popular" = "Popular";
+"price_up" = "%@ up";

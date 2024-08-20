@@ -53,7 +53,7 @@ static AFHTTPSessionManager *manager;
         if(!parameters){
             parameters = [NSMutableDictionary new];
         }
-        parameters[@"i18nConfig"] = i18nConfig;
+        parameters[@"I18nConfig"] = i18nConfig;
         [manager.requestSerializer setValue:i18nConfig forHTTPHeaderField:@"i18nConfig"];
     }
     

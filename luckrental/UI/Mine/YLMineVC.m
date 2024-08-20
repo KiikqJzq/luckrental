@@ -48,6 +48,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *aboutUsLb;
 @property (weak, nonatomic) IBOutlet UILabel *quitLb;
 @property (weak, nonatomic) IBOutlet UIView *questionV;
+@property (weak, nonatomic) IBOutlet UILabel *questionLb;
 
 @property (nonatomic, strong) NSMutableArray *dataArray1;
 @property (nonatomic, strong) NSMutableArray *dataArray2;
@@ -103,7 +104,7 @@
     _serviceLb.text = MyString(@"contact_support");
     _aboutUsLb.text = MyString(@"about_us");
     _settingLb.text = MyString(@"settings");
-    _quitLb.text = MyString(@"faq");
+    _questionLb.text = MyString(@"faq");
     
 }
 //- (void)viewWillDisappear:(BOOL)animated{
