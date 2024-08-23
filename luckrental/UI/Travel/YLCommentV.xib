@@ -19,7 +19,7 @@
                     <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aUR-5Q-VW6">
-                    <rect key="frame" x="46.666666666666657" y="80" width="300" height="300"/>
+                    <rect key="frame" x="46.666666666666657" y="150" width="300" height="300"/>
                     <subviews>
                         <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Jj5-8g-IQi">
                             <rect key="frame" x="15" y="50" width="270" height="200"/>
@@ -68,7 +68,7 @@
             </subviews>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
-                <constraint firstItem="aUR-5Q-VW6" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="80" id="ShQ-uf-LdJ"/>
+                <constraint firstItem="aUR-5Q-VW6" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="150" id="ShQ-uf-LdJ"/>
                 <constraint firstAttribute="bottom" secondItem="Pvb-w9-VPM" secondAttribute="bottom" id="T3n-7b-yO3"/>
                 <constraint firstItem="Pvb-w9-VPM" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="gI0-Ub-hbf"/>
                 <constraint firstAttribute="trailing" secondItem="Pvb-w9-VPM" secondAttribute="trailing" id="oeG-E4-6bn"/>

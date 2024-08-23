@@ -12,6 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface YLTravelTypeBean : NSObject
 @property(nonatomic,strong)NSString *tId;
 @property(nonatomic,strong)NSString *name;
+@property(nonatomic,assign)bool isSelected;
 @end
 
 NS_ASSUME_NONNULL_END

@@ -58,7 +58,6 @@ static NSInteger RCD_MAIN_TAB_INDEX = 0;
                                              selector:@selector(changeSelectedIndex:)
                                                  name:@"ChangeTabBarIndex"
                                                object:nil];
-
 }
 
 - (BOOL)shouldAutorotate{
@@ -80,6 +79,8 @@ static NSInteger RCD_MAIN_TAB_INDEX = 0;
     YLMineVC *mineVC = [[YLMineVC alloc] init];
     
     self.viewControllers = @[homeVC,travelListVC,mineVC];
+    
+    
 }
 
 

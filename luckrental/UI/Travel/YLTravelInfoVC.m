@@ -117,11 +117,9 @@
     [imgArray addObject:self.bean.mobileImg];
     [self.banner setImageURLStringsGroup:imgArray];
     self.scoreLb.text = [NSString stringWithFormat:MyString(@"score_format"),_bean.recommend];
-    self.priceLb.text = self.bean.price;
-    self.originalPriceLb.text = self.bean.originalPrice;
     self.commentCountLb.text = [NSString stringWithFormat:MyString(@"reviews_count"),_bean.commentList.count];
-    
-    
+    self.priceLb.text = [NSString stringWithFormat:MyString(@"price_up"),self.bean.price];
+
     _dataArray2 = [NSMutableArray new];
     YLOptionBean *bean31 = [YLOptionBean new];
     bean31.isSelected = _bean.recommend>0;

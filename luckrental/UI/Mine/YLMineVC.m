@@ -112,10 +112,10 @@
 //
 //}
 //
-- (void)viewWillAppear:(BOOL)animated{
-    [super viewWillAppear:animated];
-    [self.navigationController setNavigationBarHidden:YES animated:NO];
-}
+//- (void)viewWillAppear:(BOOL)animated{
+//    [super viewWillAppear:animated];
+//    [self.navigationController setNavigationBarHidden:YES animated:NO];
+//}
 
 - (void)goCurOrder{
     YLCurOrderVC *vc = [YLCurOrderVC new];

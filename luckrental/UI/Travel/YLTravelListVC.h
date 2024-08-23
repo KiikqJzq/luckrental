@@ -10,11 +10,10 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface YLTravelListVC : YLBaseVC
-@property (weak, nonatomic) IBOutlet UISegmentedControl *segCon;
 @property (weak, nonatomic) IBOutlet UICollectionView *cv;
-@property (weak, nonatomic) IBOutlet UIScrollView *scrollV;
 @property (weak, nonatomic) IBOutlet UITextField *searchTV;
 @property (weak, nonatomic) IBOutlet UILabel *searchLb;
+@property (weak, nonatomic) IBOutlet UICollectionView *typeCv;
 
 @end
 

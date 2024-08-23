@@ -10,7 +10,9 @@
 #import "YLTravelTypeBean.h"
 #import "YLTravelBean.h"
 #import "YLTravelListCell.h"
-@interface YLTravelListVC ()<UICollectionViewDelegate, UICollectionViewDataSource,UITextFieldDelegate,UIScrollViewDelegate>
+#import "YLTravelTypeCell.h"
+
+@interface YLTravelListVC ()<UICollectionViewDelegate, UICollectionViewDataSource,UITextFieldDelegate>
 @property (nonatomic, strong) NSMutableArray *typeDataArray;
 @property (nonatomic, strong) NSMutableArray *dataArray;
 @property (nonatomic, strong) NSString *typeId;
@@ -22,8 +24,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.typeId = @"";
-
-            
+    self.searchTV.placeholder = MyString(@"enter_keywords");
+    self.searchLb.text = MyString(@"search");
+    
     // 计算每个 cell 的宽度
     CGFloat cellWidth = (RCDScreenWidth -13*2 - 12) / 2.0;
     
@@ -34,6 +37,7 @@
     
     
     _cv.collectionViewLayout=flowLayout;
+    _cv.tag = 111;
     [_cv setShowsHorizontalScrollIndicator:NO];
     [_cv setShowsVerticalScrollIndicator:NO];
     _cv.scrollEnabled = NO;
@@ -47,71 +51,37 @@
     self.searchTV.delegate = self;
     [self.searchTV addTarget:self action:@selector(textFieldDidChange:) forControlEvents:UIControlEventEditingChanged];
     
-
-    [self.segCon addTarget:self action:@selector(segmentChanged:) forControlEvents:UIControlEventValueChanged];
-    [self.segCon setApportionsSegmentWidthsByContent:YES];
-    self.scrollV.showsHorizontalScrollIndicator = NO;
-//    self.scrollV.delegate = self;
     
-
+    UICollectionViewFlowLayout *flowLayout2 = [[UICollectionViewFlowLayout alloc] init];
+    flowLayout2.minimumInteritemSpacing = 0; // Column spacing
+    flowLayout2.minimumLineSpacing = 8; // Row spacing
+    flowLayout2.scrollDirection = UICollectionViewScrollDirectionHorizontal;
+    
+    _typeCv.collectionViewLayout=flowLayout2;
+    _typeCv.backgroundColor = [UIColor colorWithRed:0.0 green:0.0 blue:0.0 alpha:0.1];;
+    _typeCv.tag = 222;
+    [_typeCv setShowsHorizontalScrollIndicator:NO];
+    [_typeCv setShowsVerticalScrollIndicator:NO];
+    _typeCv.delegate = self;
+    _typeCv.dataSource = self;
+    [_typeCv registerNib:[UINib nibWithNibName:NSStringFromClass([YLTravelTypeCell class])bundle:[NSBundle mainBundle]] forCellWithReuseIdentifier:@"YLTravelTypeCell"];
+    
 }
 
 - (void)getData{
     PXWeakSelf
     [YLHTTPUtility requestWithHTTPMethod:HTTPMethodGet URLString:@"/api/travel/getTravelTypeList" parameters:nil complete:^(id ob) {
         weakSelf.typeDataArray = [YLTravelTypeBean mj_objectArrayWithKeyValuesArray:ob];
-        
         YLTravelTypeBean *hot = [YLTravelTypeBean new];
         hot.name = MyString(@"popular");
         hot.tId = @"0";
+        hot.isSelected = YES;
         [weakSelf.typeDataArray insertObject:hot atIndex:0];
-        [weakSelf.segCon removeAllSegments];
-        for (int i = 0; i < weakSelf.typeDataArray.count; i++) {
-            YLTravelTypeBean *typeBean = weakSelf.typeDataArray[i];
-            NSString *name = typeBean.name;
-            [weakSelf.segCon insertSegmentWithTitle:name atIndex:i animated:YES];
-        }
-        
-        self.segCon.selectedSegmentIndex = 0;
-        [self segmentChanged:self.segCon];
+        [weakSelf.typeCv reloadData];
+        [weakSelf getHotTravelList];
     }];
 }
 
-- (void)viewWillAppear:(BOOL)animated{
-    [super viewWillAppear:animated];
-    [self.navigationController setNavigationBarHidden:YES animated:YES];
-}
-
-- (void)segmentChanged:(UISegmentedControl *)sender {
-    NSInteger selectedIndex = sender.selectedSegmentIndex;
-    CGFloat totalWidth = 0;
-    for (NSInteger i = 0; i < selectedIndex; i++) {
-        totalWidth += [self widthOfSegmentAtIndex:i];
-    }
-    
-    CGFloat segmentWidth = [self widthOfSegmentAtIndex:selectedIndex];
-    CGFloat targetOffsetX = totalWidth - (self.view.frame.size.width / 2 - segmentWidth / 2);
-    targetOffsetX = MAX(0, MIN(targetOffsetX, self.scrollV.contentSize.width - self.scrollV.frame.size.width));
-    [self.scrollV setContentOffset:CGPointMake(targetOffsetX, 0) animated:YES];
-    
-    YLTravelTypeBean *bean = self.typeDataArray[selectedIndex];
-    self.typeId = bean.tId;
-    if (selectedIndex == 0) {
-        [self getHotTravelList];
-    } else {
-        [self getTravelList];
-    }
-}
-
-
-- (CGFloat)widthOfSegmentAtIndex:(NSInteger)index {
-    // 计算指定索引的段宽度
-    NSString *title = [self.segCon titleForSegmentAtIndex:index];
-      UIFont *font = [UIFont systemFontOfSize:14]; // Replace with your desired font size or font
-      NSDictionary *attributes = @{NSFontAttributeName: font};
-      CGSize size = [title sizeWithAttributes:attributes];
-      return size.width + 20; // Adjust the padding as needed
-}
 
 - (void)getHotTravelList{
     PXWeakSelf
@@ -137,22 +107,55 @@
 
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
-    return _dataArray.count;
+    if (collectionView.tag == 111) {
+        return _dataArray.count;
+    }else{
+        return _typeDataArray.count;
+    }
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
-    static NSString *identify = @"YLTravelListCell";
-    YLTravelBean *bean = self.dataArray[indexPath.row];
-    YLTravelListCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:identify forIndexPath:indexPath];
-    [cell initWithDate:bean];
-    return cell;
+    if (collectionView.tag == 111) {
+        static NSString *identify = @"YLTravelListCell";
+        YLTravelBean *bean = self.dataArray[indexPath.row];
+        YLTravelListCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:identify forIndexPath:indexPath];
+        [cell initWithDate:bean];
+        return cell;
+    }else{
+        static NSString *identify = @"YLTravelTypeCell";
+        YLTravelTypeBean *bean = self.typeDataArray[indexPath.row];
+        YLTravelTypeCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:identify forIndexPath:indexPath];
+        [cell initWithDate:bean];
+        return cell;
+    }
+
 }
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
-    YLTravelBean *bean = self.dataArray[indexPath.row];
-    YLTravelInfoVC *vc = [YLTravelInfoVC new];
-    vc.tid = bean.tId;
-    [self.navigationController pushViewController:vc animated:YES];
+    if (collectionView.tag == 111) {
+        YLTravelBean *bean = self.dataArray[indexPath.row];
+        YLTravelInfoVC *vc = [YLTravelInfoVC new];
+        vc.tid = bean.tId;
+        [self.navigationController pushViewController:vc animated:YES];
+    }else{
+        for (YLTravelTypeBean *item in _typeDataArray) {
+            item.isSelected = NO;
+        }
+        YLTravelTypeBean *bean = self.typeDataArray[indexPath.row];
+        bean.isSelected = YES;
+        self.typeId = bean.tId;
+        [self.typeCv reloadData];
+        
+        [collectionView scrollToItemAtIndexPath:indexPath
+                                   atScrollPosition:UICollectionViewScrollPositionCenteredHorizontally
+                                           animated:YES];
+        
+        if (0 == indexPath.row) {
+            [self getHotTravelList];
+        } else {
+            [self getTravelList];
+        }
+    }
 }
 
 - (CGFloat)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout minimumInteritemSpacingForSectionAtIndex:(NSInteger)section{
@@ -165,6 +168,22 @@
 
 - (UIEdgeInsets)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout insetForSectionAtIndex:(NSInteger)section{
     return UIEdgeInsetsMake(0.1, 0.1, 0.1, 0.1);
+}
+
+
+- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
+    if(collectionView.tag == 111){
+        CGFloat cellWidth = (RCDScreenWidth -13*2 - 12) / 2.0;
+        return CGSizeMake(cellWidth, 300);
+    }else{
+        YLTravelTypeBean *bean = self.typeDataArray[indexPath.row];
+        NSString *text = bean.name;
+        UIFont *font = [UIFont systemFontOfSize:15];
+        CGSize textSize = [text sizeWithAttributes:@{NSFontAttributeName: font}];
+        CGFloat width = textSize.width + 40;
+        CGFloat height = 35;
+        return CGSizeMake(width, height);
+    }
 }
 
 
@@ -187,18 +206,4 @@
         [self getTravelList];
     }
 }
-
-//- (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView {
-//    self.segCon.userInteractionEnabled = NO;
-//}
-//
-//- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView {
-//    self.segCon.userInteractionEnabled = YES;
-//}
-//
-//- (void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate {
-//    if (!decelerate) {
-//        self.segCon.userInteractionEnabled = YES;
-//    }
-//}
 @end

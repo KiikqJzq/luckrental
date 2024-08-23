@@ -12,10 +12,9 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="YLTravelListVC">
             <connections>
                 <outlet property="cv" destination="TK8-as-8BF" id="sw5-Qx-qTm"/>
-                <outlet property="scrollV" destination="CIS-Kd-zzR" id="HWw-16-ndf"/>
                 <outlet property="searchLb" destination="t8B-mq-99F" id="JHt-cZ-wT0"/>
                 <outlet property="searchTV" destination="y4q-nD-c2o" id="NBP-j3-NRf"/>
-                <outlet property="segCon" destination="YTF-2O-Gtr" id="w86-Vy-1cf"/>
+                <outlet property="typeCv" destination="gIg-wX-TJT" id="cHJ-ZM-6di"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -83,32 +82,27 @@
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
                 </view>
-                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CIS-Kd-zzR">
-                    <rect key="frame" x="13" y="129" width="367" height="50"/>
-                    <subviews>
-                        <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="YTF-2O-Gtr">
-                            <rect key="frame" x="1" y="1" width="500" height="32"/>
-                            <constraints>
-                                <constraint firstAttribute="width" constant="500" id="hu9-2C-WH4"/>
-                            </constraints>
-                            <segments>
-                                <segment title="First"/>
-                                <segment title="Second"/>
-                            </segments>
-                        </segmentedControl>
-                    </subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="gIg-wX-TJT">
+                    <rect key="frame" x="13" y="121" width="367" height="35"/>
+                    <color key="backgroundColor" systemColor="systemYellowColor"/>
+                    <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
-                        <constraint firstItem="YTF-2O-Gtr" firstAttribute="top" secondItem="Y9d-Gr-AGM" secondAttribute="top" constant="1" id="GGc-LY-JM9"/>
-                        <constraint firstItem="YTF-2O-Gtr" firstAttribute="leading" secondItem="Y9d-Gr-AGM" secondAttribute="leading" constant="1" id="I7O-UK-Sz3"/>
-                        <constraint firstItem="YTF-2O-Gtr" firstAttribute="bottom" secondItem="Y9d-Gr-AGM" secondAttribute="bottom" constant="1" id="O5S-au-fQF"/>
-                        <constraint firstItem="6xt-A8-5gH" firstAttribute="height" secondItem="YTF-2O-Gtr" secondAttribute="height" multiplier="1.6129" id="j1A-aj-lg8"/>
-                        <constraint firstItem="YTF-2O-Gtr" firstAttribute="trailing" secondItem="Y9d-Gr-AGM" secondAttribute="trailing" id="rPI-wL-ZzV"/>
+                        <constraint firstAttribute="height" constant="35" id="Odp-0s-TEX"/>
                     </constraints>
-                    <viewLayoutGuide key="contentLayoutGuide" id="Y9d-Gr-AGM"/>
-                    <viewLayoutGuide key="frameLayoutGuide" id="6xt-A8-5gH"/>
-                </scrollView>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="CIF-We-acS">
+                        <size key="itemSize" width="128" height="128"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="4"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </collectionView>
                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="TK8-as-8BF">
-                    <rect key="frame" x="13" y="179" width="367" height="639"/>
+                    <rect key="frame" x="13" y="164" width="367" height="654"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Svr-4S-4lM">
                         <size key="itemSize" width="128" height="128"/>
@@ -121,19 +115,19 @@
             <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
+                <constraint firstItem="TK8-as-8BF" firstAttribute="top" secondItem="gIg-wX-TJT" secondAttribute="bottom" constant="8" id="1oy-TL-AE5"/>
                 <constraint firstItem="ci9-x3-puO" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="13" id="4sc-dg-pXF"/>
                 <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="TK8-as-8BF" secondAttribute="trailing" constant="13" id="Org-sk-JMF"/>
                 <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="n9y-fp-XB7" secondAttribute="trailing" id="PUB-Kb-3kF"/>
                 <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="TK8-as-8BF" secondAttribute="bottom" id="QOa-hS-1nl"/>
-                <constraint firstItem="CIS-Kd-zzR" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="13" id="RSQ-C5-Om7"/>
-                <constraint firstItem="CIS-Kd-zzR" firstAttribute="top" secondItem="ci9-x3-puO" secondAttribute="bottom" constant="16" id="Tht-jF-Bxw"/>
                 <constraint firstItem="n9y-fp-XB7" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="TqA-qY-e4F"/>
                 <constraint firstItem="n9y-fp-XB7" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="XcM-gS-ClK"/>
                 <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="ci9-x3-puO" secondAttribute="trailing" constant="13" id="Zmy-Mq-bfH"/>
                 <constraint firstItem="TK8-as-8BF" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="13" id="g7U-Qj-jei"/>
-                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="CIS-Kd-zzR" secondAttribute="trailing" constant="13" id="gvc-er-sN5"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="gIg-wX-TJT" secondAttribute="trailing" constant="13" id="lmH-ao-LdY"/>
                 <constraint firstItem="ci9-x3-puO" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="16" id="tob-N5-udc"/>
-                <constraint firstItem="TK8-as-8BF" firstAttribute="top" secondItem="CIS-Kd-zzR" secondAttribute="bottom" id="v2l-et-zuC"/>
+                <constraint firstItem="gIg-wX-TJT" firstAttribute="top" secondItem="ci9-x3-puO" secondAttribute="bottom" constant="8" id="veD-Cf-9B6"/>
+                <constraint firstItem="gIg-wX-TJT" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="13" id="xTY-aH-RhN"/>
             </constraints>
             <point key="canvasLocation" x="139.69465648854961" y="19.718309859154932"/>
         </view>
@@ -143,6 +137,9 @@
         <image name="ic_search" width="12" height="12"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

@@ -37,7 +37,7 @@
     [self.superVc.view addSubview:self];
     [UIView animateWithDuration:0.5 animations:^{
         self.bgV.alpha = 0.5;
-        self.contentV.top = 100;
+        self.contentV.top = 150;
     }];
     
     [_tv becomeFirstResponder];

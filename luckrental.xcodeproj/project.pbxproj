@@ -45,6 +45,8 @@
 		FB2B01562C60D93400C34693 /* YLQuestionListVc.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB2B01542C60D93400C34693 /* YLQuestionListVc.xib */; };
 		FB2EA77C2C70F5D3008C40AC /* YLEvaluaCell2.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB2EA77B2C70F5D3008C40AC /* YLEvaluaCell2.xib */; };
 		FB2EA77D2C70F5D3008C40AC /* YLEvaluaCell2.m in Sources */ = {isa = PBXBuildFile; fileRef = FB2EA77A2C70F5D3008C40AC /* YLEvaluaCell2.m */; };
+		FB34BA512C7855EB0066B5E1 /* YLTravelTypeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB34BA502C7855EB0066B5E1 /* YLTravelTypeCell.xib */; };
+		FB34BA522C7855EB0066B5E1 /* YLTravelTypeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FB34BA4F2C7855EB0066B5E1 /* YLTravelTypeCell.m */; };
 		FB405BDD2AB2DAC1008652CC /* YLHTTPUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = FB405BD92AB2DAC1008652CC /* YLHTTPUtility.m */; };
 		FB405BDE2AB2DAC1008652CC /* YLHTTPResult.m in Sources */ = {isa = PBXBuildFile; fileRef = FB405BDA2AB2DAC1008652CC /* YLHTTPResult.m */; };
 		FB405BEB2AB2F3B4008652CC /* YLLoginVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FB405BE82AB2F3B4008652CC /* YLLoginVC.m */; };
@@ -204,6 +206,9 @@
 		FB2EA7792C70F5D3008C40AC /* YLEvaluaCell2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLEvaluaCell2.h; sourceTree = "<group>"; };
 		FB2EA77A2C70F5D3008C40AC /* YLEvaluaCell2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLEvaluaCell2.m; sourceTree = "<group>"; };
 		FB2EA77B2C70F5D3008C40AC /* YLEvaluaCell2.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YLEvaluaCell2.xib; sourceTree = "<group>"; };
+		FB34BA4E2C7855EB0066B5E1 /* YLTravelTypeCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLTravelTypeCell.h; sourceTree = "<group>"; };
+		FB34BA4F2C7855EB0066B5E1 /* YLTravelTypeCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLTravelTypeCell.m; sourceTree = "<group>"; };
+		FB34BA502C7855EB0066B5E1 /* YLTravelTypeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YLTravelTypeCell.xib; sourceTree = "<group>"; };
 		FB405BD92AB2DAC1008652CC /* YLHTTPUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLHTTPUtility.m; sourceTree = "<group>"; };
 		FB405BDA2AB2DAC1008652CC /* YLHTTPResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLHTTPResult.m; sourceTree = "<group>"; };
 		FB405BDB2AB2DAC1008652CC /* YLHTTPResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLHTTPResult.h; sourceTree = "<group>"; };
@@ -811,6 +816,9 @@
 				FBFD20482C6C8D4200EED696 /* YLCommentV.h */,
 				FBFD20492C6C8D4200EED696 /* YLCommentV.m */,
 				FBFD204B2C6C8E0F00EED696 /* YLCommentV.xib */,
+				FB34BA4E2C7855EB0066B5E1 /* YLTravelTypeCell.h */,
+				FB34BA4F2C7855EB0066B5E1 /* YLTravelTypeCell.m */,
+				FB34BA502C7855EB0066B5E1 /* YLTravelTypeCell.xib */,
 			);
 			path = Travel;
 			sourceTree = "<group>";
@@ -919,6 +927,7 @@
 				FB09D09A2AB443050049A8C8 /* YLCarListCell.xib in Resources */,
 				FB09D0C82AB593F50049A8C8 /* YLCurOrderCell.xib in Resources */,
 				FBFD20462C69F4FF00EED696 /* YLTravelListCell.xib in Resources */,
+				FB34BA512C7855EB0066B5E1 /* YLTravelTypeCell.xib in Resources */,
 				FBF50D452B26FEA000219359 /* YLEvaluaCell.xib in Resources */,
 				FB9126AA2AAF6DD00089E6D7 /* Main.storyboard in Resources */,
 				FBF50D382B22C21D00219359 /* YLCarFuncCell.xib in Resources */,
@@ -1028,6 +1037,7 @@
 				FB6108582AD7C65B0050868E /* RCDLanguageManager.m in Sources */,
 				FB9126A12AAF6DD00089E6D7 /* AppDelegate.m in Sources */,
 				FBF50D442B26FEA000219359 /* YLEvaluaCell.m in Sources */,
+				FB34BA522C7855EB0066B5E1 /* YLTravelTypeCell.m in Sources */,
 				FB09D0BB2AB575150049A8C8 /* YLRechargeVC.m in Sources */,
 				FBFD202E2C69D81200EED696 /* YLTravelListVC.m in Sources */,
 				FBCD43B52AD0118800AC3C1C /* YLSatisfactionBean.m in Sources */,
@@ -1222,7 +1232,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = luckrental/luckrental.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 24;
+				CURRENT_PROJECT_VERSION = 25;
 				DEVELOPMENT_TEAM = P4G5G8W83R;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = luckrental/Info.plist;
@@ -1263,7 +1273,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = luckrental/luckrental.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 24;
+				CURRENT_PROJECT_VERSION = 25;
 				DEVELOPMENT_TEAM = P4G5G8W83R;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = luckrental/Info.plist;

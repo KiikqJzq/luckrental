@@ -181,9 +181,9 @@
     [YLHTTPUtility requestWithHTTPMethod:HTTPMethodGet URLString:@"/api/merchant/getHotMerchantList" parameters:nil complete:^(id ob) {
         self.merchantArray = [YLMerchantBean mj_objectArrayWithKeyValuesArray:ob];
         //test
-        [self.merchantArray addObject:self.merchantArray[0]];
-        [self.merchantArray addObject:self.merchantArray[0]];
-        [self.merchantArray addObject:self.merchantArray[0]];
+//        [self.merchantArray addObject:self.merchantArray[0]];
+//        [self.merchantArray addObject:self.merchantArray[0]];
+//        [self.merchantArray addObject:self.merchantArray[0]];
         
         if(self.carArray.count >=3 && self.merchantArray.count >=3){
             [self.contentV mas_remakeConstraints:^(MASConstraintMaker *make) {
@@ -226,8 +226,6 @@
         }
         [self.banner setImageURLStringsGroup:imgArray];
     }];
-    
-
 }
 
 
@@ -402,8 +400,5 @@
     app.window.rootViewController = nav;
     
 }
-- (void)viewWillAppear:(BOOL)animated{
-    [super viewWillAppear:animated];
-    [self.navigationController setNavigationBarHidden:YES animated:NO];
-}
+
 @end
