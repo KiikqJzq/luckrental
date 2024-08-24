@@ -10,8 +10,8 @@
 #define RCloudMessage_RCDCommonDefine_h
 
 #define SERVICE_ID @"service"
-#define DEMO_SERVER @"http://114.55.119.35:7070"
-//#define DEMO_SERVER @"https://api.luckrentalcar.com"
+//#define DEMO_SERVER @"http://114.55.119.35:7070"
+#define DEMO_SERVER @"https://api.luckrentalcar.com"
 #define RONGCLOUD_NAVI_SERVER @""
 #define RONGCLOUD_FILE_SERVER @""
 #define RONGCLOUD_STATS_SERVER @""

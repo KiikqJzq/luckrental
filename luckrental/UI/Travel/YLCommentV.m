@@ -62,10 +62,30 @@
     dic[@"content"] =  content;
     dic[@"travelId"] =  self.travelId;
     [YLHTTPUtility requestWithHTTPMethod:HTTPMethodPost URLString:@"/api/travel/addTravelReply" parameters:dic complete:^(id ob) {
+        [weakSelf showCompletionAlert];
+    }];
+    
+    
+}
+
+- (void)showCompletionAlert {
+    PXWeakSelf
+    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:MyString(@"thank_you_for_your_comment")
+                                                                             message:nil
+                                                                      preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertAction *okAction = [UIAlertAction actionWithTitle:MyString(@"confirm")
+                                                       style:UIAlertActionStyleDefault
+                                                     handler:^(UIAlertAction * _Nonnull action) {
+        //        [weakSelf.superVc.navigationController popViewControllerAnimated:YES];
+        //                                                     }];
         [weakSelf close];
     }];
-    [self close];
+    [alertController addAction:okAction];
+    [weakSelf.superVc presentViewController:alertController animated:YES completion:nil];
 }
+
+
+
 
 
 @end
